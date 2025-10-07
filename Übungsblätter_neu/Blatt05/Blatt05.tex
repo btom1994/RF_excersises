@@ -1,0 +1,166 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{amsmath} \usepackage{amssymb} \usepackage{amscd}
+\usepackage{amsfonts}
+%\usepackage{amscd}
+\usepackage{latexsym} \usepackage{mathrsfs} 
+
+\usepackage{ngerman}
+\usepackage{yfonts}
+\usepackage{color}
+%\usepackage[pdftex]{graphicx}
+%\usepackage{pdfpages}
+\usepackage{dsfont}
+\usepackage{xy}\xyoption{all}
+\usepackage{enumitem}
+
+%%%%%%%%
+\usepackage{graphicx}
+\definecolor{MNTFcol}{RGB}{0,101,97}
+\definecolor{dunkelgrau}{rgb}{0.5,0.5,0.5}
+\definecolor{hellgrau}{rgb}{0.95,0.95,0.95}
+\definecolor{neuePO}{rgb}{0.85,0.85,0.94}
+\definecolor{purp4}{rgb}{0.36,0.28,0.55}
+\definecolor{silv}{rgb}{0.45,0.45,0.50}
+\usepackage{colortbl}
+
+
+\setlength{\textwidth}{18cm} %% eigentlich 16cm
+\setlength{\oddsidemargin}{-10mm} %%eigentlich 0mm
+\setlength{\evensidemargin}{0mm}
+\setlength{\unitlength}{1mm}
+\setlength{\textheight}{22cm}
+%\voffset=-3cm
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+
+\def\R{{\mathbb R}} \def\C{{\mathbb C}} \def\N{{\mathbb N}}
+\def\Z{{\mathbb Z}} \def\Pj{{\mathbb P}} \def\cc{{\cal C}}
+\def\Q{{\mathbb Q}} \def\vi{\varphi} \def\ve{\varepsilon}
+\def\F{{\mathbb F}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cHom}{\mathcal{H}om}
+\newcommand{\GL}{\mathrm{GL}}
+\newcommand{\Ab}{\mathcal{A}b}
+
+\newcommand{\falle}[1]{\underset{{#1}}{\forall} \ }
+\newcommand{\gibts}[1]{\underset{{#1}}{\exists} \ }
+
+
+\newcommand{\lto}{\longrightarrow}
+\newcommand{\widebar}[1]{\overline{#1}}
+\newcounter{aufg}
+\newcommand{\Aufg}{\stepcounter{aufg}\vspace*{0.2cm}\noindent{\bf
+    Aufgabe \arabic{aufg}:} }
+\newcommand{\tAufg}{\stepcounter{aufg}\vspace*{0.2cm}\noindent{\bf
+    "U.Aufgabe \arabic{aufg}:} }
+
+\newcommand{\sAufg}{\vspace*{0.7cm}\noindent{\bf $\ast $-Aufgabe:} }
+\renewcommand{\labelenumi}{{\rm \roman{enumi})}}
+
+\newcommand{\sRHom}{\mathrm{R}\mathcal{H}om}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\eig}[1]{\mathrm{Eigenwerte}(#1)}
+\newcommand{\isoto}{\stackrel{\cong}{\lto}}
+\newcommand{\companion}[1]{\mathrm{Begleit}(#1)}
+\newcommand{\sbt}{\text{\tiny$\bullet$}}
+\newcommand{\Kom}{\mathrm{Kom}}
+
+\begin{document}
+\sffamily
+\setlist[enumerate]{leftmargin=*}
+
+\pagestyle{empty}
+
+\unitlength1mm
+
+\begin{picture}(100,50)
+
+\put(-8,52){\includegraphics[scale=0.4]{Uni_Aug_Logo_MNTF_RGB}}
+
+\put(110,82){
+\begin{minipage}[t]{6cm} \baselineskip10pt
+ \rule[2.5mm]{6cm}{.3pt}
+ 
+  {\scriptsize\bf  Prof. Dr. Marco Hien\\
+  M. Sc. Thomas Bargen\\
+ \rule{6cm}{.3pt}}
+\end{minipage}
+}
+\end{picture}
+
+\vspace*{-6.5cm}
+\centerline{\Large Aufgaben zu {\it Riemannsche Flächen} -- WS 2025/26}
+
+
+\medskip \centerline{5. Blatt}
+
+
+\setcounter{aufg}{15}
+\newcounter{labl}
+
+\vspace*{1cm}
+
+\Aufg Sei $Y$ eine Mannigfaltigkeit und $y_0 \in Y$. Ferner sei $\alpha$ ein Weg von $y_0$ nach $y \in Y$. Wie im Beweis der Existenz der universellen Überlagerung sei für eine einfach zusammenhängende, offene Umgebung $U$ von $y$
+\[
+\left(U, [\alpha] \right) := \{ (z, [\alpha \cdot \gamma]) \mid z \in U, \ \gamma \text{ ein Weg in } U \text{ von } y \text{ nach } z \}.
+\]
+Zeige, dass diese Mengen eine Basis einer Topologie von $\widetilde{Y}$ bilden, d.h. dass durch
+\[
+W \subset \widetilde{Y} \text{ offen} \iff \forall w \in W \exists \left( U, [\alpha] \right) \text{ wie oben : }  w \in \left(U,[\alpha] \right) \subset W
+\]
+eine Topologie definiert ist.
+
+\medskip
+
+\Aufg Sei wieder $\Gamma := \mathbb{Z}\omega_1 \oplus \mathbb{Z}\omega_2$ ein vollständiges Gitter in $\mathbb{C}$ und $T := \mathbb{C}/\Gamma$ der entsprechende Torus. Wir nennen eine meromorphe Funktion $f : T \to \mathbb{C}\mathbb{P}^1$ \emph{gerade}, wenn die zugehörige doppelt-periodische, meromorphe Funktion auf $\mathbb{C}$ es ist (also $f(-z) = f(z)$ erfüllt) und \emph{ungerade} analog ($f(-z) = -f(z)$). Im Folgenden sei $f$ immer eine doppelt-periodische Funktion bzgl. $\Gamma$. Zeige:
+
+\begin{enumerate}
+	\item[i)] Die Weierstraß-Funktion $\wp$ ist gerade, ihre Ableitung $\wp'$ (als doppelt-periodische Funktion) ungerade.
+	\item[ii)] Jedes $f$ hat eine Darstellung $f = f_{\text{ev}} + f_{\text{odd}}$ mit geradem $f_{\text{ev}}$ und ungeradem $f_{\text{odd}}$.
+	\item[iii)] Ist $f$ gerade, so existiert eine rationale Funktion $R(z) \in \mathbb{C}(z)$, so dass
+	\[
+	f(z) = R(\wp(z)).
+	\]
+	\item[iv)] Jedes $f$ hat die Darstellung $f(z) = R(\wp(z)) + \wp'(z) \cdot S(\wp(z))$ mit $R, S \in \mathbb{C}(z)$.
+	\item[v)] Die gerade Funktion $\wp'(z)^2$ hat die Darstellung
+	\[
+	\wp'(z)^2 = 4\wp(z)^3 - g_2 \wp(z) - g_3
+	\]
+	mit $g_2 = 60 G_4$ und $g_3 = 140 G_6$, wobei
+	\[
+	G_k := \sum_{\lambda \in \Gamma \setminus \{0\}} \lambda^{-k}.
+	\]
+\end{enumerate}
+
+\textit{Hinweis zu iii):} Zu finden ist also ein $R \in \mathbb{C}(z) = \mathcal{M}(\mathbb{CP}^1)$, so dass
+\[
+\xymatrix{
+	T \ar[d]_{\wp}  \ar[dr]^{f} & \\
+	\mathbb{CP}^1 \ar[r]^{R} & \mathbb{CP}^1
+}
+\]
+kommutiert. Untersuche dazu die geometrischen Eigenschaften der eigentlichen Abbildung $\wp$: Wo ist sie verzweigt? Wieso sind die Punkte $b_1 := \tfrac{\omega_1}{2}$, $b_2 := \tfrac{\omega_2}{2}$ und $b_3 := \tfrac{\omega_1+\omega_2}{2}$ und $b_4 := \infty$ besonders? Welche Überlagerung ist $\wp$ außerhalb der verzweigten Punkte im Sinne von: welche Fasern hat diese Überlagerung und was hat das damit zu tun, dass $\wp$ gerade ist? Was nutzt es dann, dass $f$ auch gerade sein soll?
+
+\medskip
+
+\Aufg Folgere aus der vorhergehenden Aufgabe, dass für einen Torus $\mathbb{C}/\Gamma$ gilt:
+\[
+\mathcal{M}(T) \cong \mathbb{C}(z)[w] / (w^2 - 4z^3 + g_2z + g_3).
+\]
+
+
+
+\end{document}

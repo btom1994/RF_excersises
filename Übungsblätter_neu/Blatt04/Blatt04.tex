@@ -1,0 +1,147 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{amsmath} \usepackage{amssymb}
+\usepackage{amsfonts}
+%\usepackage{amscd}
+\usepackage{latexsym} \usepackage{mathrsfs} 
+
+\usepackage{ngerman}
+\usepackage{yfonts}
+\usepackage{color}
+%\usepackage[pdftex]{graphicx}
+%\usepackage{pdfpages}
+\usepackage{dsfont}
+\usepackage{xy}\xyoption{all}
+\usepackage{enumitem}
+
+
+%%%%%%%%
+\usepackage{graphicx}
+\definecolor{MNTFcol}{RGB}{0,101,97}
+\definecolor{dunkelgrau}{rgb}{0.5,0.5,0.5}
+\definecolor{hellgrau}{rgb}{0.95,0.95,0.95}
+\definecolor{neuePO}{rgb}{0.85,0.85,0.94}
+\definecolor{purp4}{rgb}{0.36,0.28,0.55}
+\definecolor{silv}{rgb}{0.45,0.45,0.50}
+\usepackage{colortbl}
+
+
+\setlength{\textwidth}{18cm} %% eigentlich 16cm
+\setlength{\oddsidemargin}{-10mm} %%eigentlich 0mm
+\setlength{\evensidemargin}{0mm}
+\setlength{\unitlength}{1mm}
+\setlength{\textheight}{22cm}
+%\voffset=-3cm
+
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{helvet}
+
+\def\R{{\mathbb R}} \def\C{{\mathbb C}} \def\N{{\mathbb N}}
+\def\Z{{\mathbb Z}} \def\Pj{{\mathbb P}} \def\cc{{\cal C}}
+\def\Q{{\mathbb Q}} \def\vi{\varphi} \def\ve{\varepsilon}
+\def\F{{\mathbb F}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cHom}{\mathcal{H}om}
+\newcommand{\GL}{\mathrm{GL}}
+\newcommand{\Ab}{\mathcal{A}b}
+
+\newcommand{\falle}[1]{\underset{{#1}}{\forall} \ }
+\newcommand{\gibts}[1]{\underset{{#1}}{\exists} \ }
+
+
+\newcommand{\lto}{\longrightarrow}
+\newcommand{\widebar}[1]{\overline{#1}}
+\newcounter{aufg}
+\newcommand{\Aufg}{\stepcounter{aufg}\vspace*{0.2cm}\noindent{\bf
+    Aufgabe \arabic{aufg}:} }
+\newcommand{\tAufg}{\stepcounter{aufg}\vspace*{0.2cm}\noindent{\bf
+    "U.Aufgabe \arabic{aufg}:} }
+
+\newcommand{\sAufg}{\vspace*{0.7cm}\noindent{\bf $\ast $-Aufgabe:} }
+\renewcommand{\labelenumi}{{\rm \roman{enumi})}}
+
+\newcommand{\sRHom}{\mathrm{R}\mathcal{H}om}
+\newcommand{\Hom}{\text{Hom}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\eig}[1]{\mathrm{Eigenwerte}(#1)}
+\newcommand{\isoto}{\stackrel{\cong}{\lto}}
+\newcommand{\companion}[1]{\mathrm{Begleit}(#1)}
+\newcommand{\sbt}{\text{\tiny$\bullet$}}
+\newcommand{\Kom}{\mathrm{Kom}}
+
+\begin{document}
+\sffamily
+\setlist[enumerate]{leftmargin=*}
+
+\pagestyle{empty}
+
+\unitlength1mm
+
+\begin{picture}(100,50)
+
+\put(-8,52){\includegraphics[scale=0.4]{Uni_Aug_Logo_MNTF_RGB}}
+
+\put(110,82){
+\begin{minipage}[t]{6cm} \baselineskip10pt
+ \rule[2.5mm]{6cm}{.3pt}
+ 
+  {\scriptsize\bf  Prof. Dr. Marco Hien\\
+  M. Sc. Thomas Bargen\\
+ \rule{6cm}{.3pt}}
+\end{minipage}
+}
+\end{picture}
+
+\vspace*{-6.5cm}
+\centerline{\Large Aufgaben zu {\it Riemannsche Flächen} -- WS 2025/26}
+
+
+\medskip \centerline{4. Blatt}
+
+
+\setcounter{aufg}{11}
+\newcounter{labl}
+
+\vspace*{1cm}
+
+\Aufg Betrachte $Y := \mathbb{C} \setminus \{\pm 1\}$ und $X := \mathbb{C} \setminus \bigl(\tfrac{\pi}{2} + \mathbb{Z}\pi\bigr)$, sowie
+\[
+\pi : X \to Y, \quad z \mapsto \sin(z).
+\]
+Zeige, dass $\pi$ eine Überlagerung ist. Betrachte dann die Kurven $\alpha, \beta : I \to Y$, mit $\alpha(t) = 1 - e^{2\pi i t}$ und $\beta(t) = -1 + e^{2\pi i t}$.
+
+Bestimme die Endpunkte der Liftungen von $\alpha \cdot \beta$ und $\beta \cdot \alpha$ jeweils zum Startpunkt $0$ und folgere, dass $\pi_1(Y, 0)$ nicht abelsch ist.
+
+\medskip
+
+\Aufg Zeige: Ist $\pi : X \to Y$ eine Überlagerung zusammenhängender, lokal wegzusammenhängender Hausdorffräume, $x_0 \in X$ und $y_0 := \pi(x_0)$, so ist
+\[
+f_* : \pi_1(X, x_0) \to \pi_1(Y, y_0)
+\]
+injektiv.
+
+\medskip
+
+\Aufg Bestimme die Verzweigungspunkte von
+\[
+f : \mathbb{CP}^1 \to \mathbb{CP}^1, \quad z \mapsto \tfrac{1}{2} \left( z + \frac{1}{z} \right).
+\]
+Wer will, kann das Bild des Einheitskreises $S^1 \subset \mathbb{C}$ zeichnen und erklären, warum diese Transformation $f$ im Flugzeugbau eine Rolle gespielt haben könnte.
+
+\medskip
+
+\Aufg Sei $\pi : X \to Y$ eine holomorphe Überlagerung Riemannscher Flächen. Sei $\varphi : X \to X$ ein Homöomorphismus, so dass $\pi \circ \varphi = \pi$ (also eine sogenannte \emph{Decktransformation}). Zeige, dass $\varphi$ dann automatisch schon biholomorph ist.
+
+
+
+\end{document}

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  29 SEP 2025 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  30 SEP 2025 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Blatt01.tex
-(./Blatt01.tex
+**Blatt02.tex
+(./Blatt02.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (d:/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -582,8 +582,8 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count305
 \l__pdf_internal_box=\box70
 )
-(./Blatt01.aux)
-\openout1 = `Blatt01.aux'.
+(./Blatt02.aux)
+\openout1 = `Blatt02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
 LaTeX Font Info:    ... okay on input line 82.
@@ -662,7 +662,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14.4> not available
 
 {d:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Uni_Aug_Logo_
 MNTF_RGB.jpeg>]
-(./Blatt01.aux) ) 
+(./Blatt02.aux) ) 
 Here is how much of TeX's memory you used:
  16780 strings out of 478276
  313294 string characters out of 5850490
@@ -672,18 +672,19 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  100i,7n,104p,3223b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/202
-1/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2021/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2021/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts
-/symbols/msbm10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a
-.pfb><d:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texliv
-e/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Blatt01.pdf (1 page, 106979 bytes).
+xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/2021/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2021/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols
+/msbm10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:
+/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2021/t
+exmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on Blatt02.pdf (1 page, 113439 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 63 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
