@@ -106,15 +106,67 @@
 \centerline{\Large Aufgaben zu {\it Riemannsche Flächen} -- WS 2025/26}
 
 
-\medskip \centerline{1. Blatt}
+\medskip \centerline{6. Blatt}
 
 
-\setcounter{aufg}{0}
+\setcounter{aufg}{18}
 \newcounter{labl}
 
 \vspace*{1cm}
 
 \Aufg 
+\begin{enumerate}
+	\item[i)] Sei 
+	$ \pi : \widetilde{X} \to X $
+	die universelle Überlagerung einer zusammenhängenden Riemannschen Fläche und 
+	$ f : Z \to X $
+	eine weitere normale(!) Überlagerung. Wie könnte man eine ,,Einschränkung''
+	\[
+	\rho : \mathrm{Deck}(\widetilde{X}|X) \to \mathrm{Deck}(Z|X)
+	\]
+	definieren? Was ist deren Kern?
+	
+	\item[ii)] Nutze die vorhergehende Teilaufgabe, um den folgenden Satz zu zeigen:
+	
+	\medskip
+	\noindent
+	\textbf{Satz:} \textit{Ist $X$ eine zusammenhängende Riemannsche Fläche, dann gibt es zu jedem surjektiven Gruppenhomomorphismus 
+	$ \pi_1(X,x_0) \to G $
+	eine (bis auf Isomorphie eindeutige) normale Überlagerung 
+	$ f : Z \to X $
+	durch eine zusammenhängende Riemannsche Fläche $Z$, so dass 
+	$ \mathrm{Deck}(Z|X) \cong G $.}
+\end{enumerate}
+
+\Aufg Sei 
+$Y := \mathbb{C} \setminus \{0,1\}$, $X := \mathbb{C} \setminus \{0, \pm i, \pm i\sqrt{2}\}$ und
+\[
+f : X \to Y, \quad z \mapsto (z^2 + 1)^2.
+\]
+Zeige, dass $f$ eine unverzweigte, 4-blättrige Überlagerung ist, die aber nicht normal ist, und dass
+\[
+\mathrm{Deck}(X|Y) = \{\mathrm{id}, (z \mapsto -z)\}
+\]
+gilt.
+
+\Aufg Seien $\Lambda, \Gamma \subset \mathbb{C}$ vollständige Gitter und sei 
+$f : \mathbb{C}/\Lambda \to \mathbb{C}/\Gamma$
+eine nicht-konstante holomorphe Abbildung mit 
+$f(0 \bmod \Lambda) = 0 \bmod \Gamma$.
+Zeige, dass es ein $\alpha \in \mathbb{C}^\times$ gibt, so dass 
+$ \alpha \Lambda \subset \Gamma $
+und dass das Diagramm
+\[
+\xymatrix{
+	\mathbb{C} \ar[d] \ar[r]^{z\mapsto\alpha z} & \mathbb{C} \ar[d] \\
+	\mathbb{C}/\Lambda \ar[r]^{f} & \mathbb{C}/\Gamma
+}
+\]
+kommutiert. Zeige ferner, dass $f$ eine unverzweigte Überlagerung ist und
+\[
+\mathrm{Deck}(f) \cong \Gamma / \alpha \Lambda
+\]
+gilt.
 
 
 
