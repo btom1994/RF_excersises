@@ -113,22 +113,26 @@
 \newcounter{labl}
 
 \vspace*{1cm}
+Auf diesem Blatt bezeichnet $\Lambda_\tau:=\mathbb{Z}1\oplus\mathbb{Z}\tau$ stets das Gitter für $\tau \in \mathbb{H} := \{ z \in \mathbb{C} \mid \operatorname{Im}(z) > 0 \}$.
 
-\Aufg Betrachte Gitter $\Gamma(\tau) := \mathbb{Z}1 \oplus \mathbb{Z}\tau \subset \mathbb{C}$ für $\tau \in \mathbb{H} = \{ z \in \mathbb{C} \mid \operatorname{Im}(z) > 0\}$. Seien nun $\tau \in \mathbb{H}$ gegeben und
+\medskip
+
+\Aufg Seien $\tau \in \mathbb{H}$ gegeben und
 \[
 \begin{pmatrix}
 	a & b \\ c & d
 \end{pmatrix} \in SL_2(\mathbb{Z}) = \{ A \in \operatorname{Mat}(2 \times 2, \mathbb{Z}) \mid \det(A) = 1 \}.
 \]
-Zeigen Sie, dass für $\tau' := \frac{a\tau + b}{c\tau + d}$ gilt, dass die beiden Tori $\mathbb{C}/\Gamma(\tau)$ und $\mathbb{C}/\Gamma(\tau')$ isomorph sind.
+
+Zeige: Wenn $\tau' := \frac{a\tau + b}{c\tau + d}$ gilt, dann sind die beiden Tori $\mathbb{C}/\Lambda_\tau$ und $\mathbb{C}/\Lambda_{\tau'}$ isomorph.
 
 \medskip
 
-\Aufg Sei $\alpha : \mathcal{F} \to \mathcal{G}$ ein Morphismus von Garben auf dem topologischen Raum $X$. Begründen Sie, dass $\alpha$ zu jedem $x \in X$ einen Gruppenhomomorphismus
-\[
-\alpha_x : \mathcal{F}_x \to \mathcal{G}_x
-\]
-induziert. Zeigen Sie: Ist $U \subset X$ offen und $\alpha_x$ für alle $x \in U$ injektiv, so ist auch $\alpha(U) : \mathcal{F}(U) \to \mathcal{G}(U)$ injektiv.
+\Aufg Sei $\alpha : \mathcal{F} \to \mathcal{G}$ ein Morphismus von Garben auf einem topologischen Raum $X$. 
+\begin{enumerate}
+	\item Begründe, dass $\alpha$ zu jedem $x \in X$ einen Gruppenhomomorphismus $\alpha_x : \mathcal{F}_x \to \mathcal{G}_x$ auf den Halmen induziert.
+	\item Zeige: Ist $U \subset X$ offen und $\alpha_x$ für alle $x \in U$ injektiv, so ist auch $\alpha(U) : \mathcal{F}(U) \to \mathcal{G}(U)$ injektiv.
+\end{enumerate}
 
 \medskip
 
@@ -136,36 +140,35 @@ induziert. Zeigen Sie: Ist $U \subset X$ offen und $\alpha_x$ für alle $x \in U
 \[
 U_0 := \mathbb{C} \quad \text{und} \quad U_1 := \mathbb{CP}^1 \setminus \{0\}.
 \]
-Sei $m \in \mathbb{Z}$. Zeigen Sie, dass durch
-\[
-U \mapsto \{ (f_0, f_1) \mid f_j : U \cap U_j \to \mathbb{C} \text{ holomorph und es gilt } f_0(z) = z^{m} f_1(z) \ \forall z \in U \cap U_0 \cap U_1 \} \color{red}(z^{-m}???)
-\]
-eine Garbe auf $\mathbb{CP}^1$ definiert ist (was sind die Restriktionen?). Wir bezeichnen sie mit $\mathcal{O}_{\mathbb{CP}^1}(m)$. Bestimmen Sie die \textit{globalen Schnitte} $\mathcal{O}_{\mathbb{CP}^1}(m)(\mathbb{CP}^1)$ in Abhängigkeit von $m$.
+Sei $m \in \mathbb{Z}$. 
+\begin{enumerate}
+	\item Zeige, dass durch die Zuordnung
+	\[
+	U \mapsto \{ (f_0, f_1) \mid f_j : U \cap U_j \to \mathbb{C} \text{ holomorph mit } \forall z \in U \cap U_0 \cap U_1: f_0(z) = z^{m} f_1(z) \} 
+	\]
+	eine Garbe auf $\mathbb{CP}^1$ definiert ist (was sind die Restriktionen?). Wir bezeichnen sie mit $\mathcal{O}_{\mathbb{CP}^1}(m)$.
+	\item  Bestimme die \textit{globalen Schnitte} $\mathcal{O}_{\mathbb{CP}^1}(m)(\mathbb{CP}^1)$ dieser Garbe in Abhängigkeit von $m$.
+\end{enumerate}
+
 
 \medskip
 
-\Aufg Sei $\tau \in \mathbb{H} = \{ z \in \mathbb{C} \mid \operatorname{Im}(z) > 0 \}$ und $\Lambda = \mathbb{Z}1 \oplus \mathbb{Z}\tau \subset \mathbb{C}$. Zeige: 
-
+\Aufg  Wir betrachten in dieser Aufgabe die Weierstraß $\wp$-Funktion, welche wie folgt definiert ist:
+\[
+\wp(z) := \frac{1}{z^2} + \sum_{\lambda \in \Lambda_\tau \setminus \{0\}} \left( \frac{1}{(z + \lambda)^2} - \frac{1}{\lambda^2} \right)
+\]
 \begin{enumerate}
-	\item[i)] durch
-	\[
-	\wp(z) := \frac{1}{z^2} + \sum_{\lambda \in \Lambda \setminus \{0\}} \left( \frac{1}{(z + \lambda)^2} - \frac{1}{\lambda^2} \right)
-	\]
-	ist eine meromorphe Funktion auf dem Torus $T := \mathbb{C}/\Lambda$ definiert.
+	\item[i)]Begründe, dass dies eine meromorphe Funktion auf dem Torus $T := \mathbb{C}/\Lambda_\tau$ definiert.
 	
-	\item[ii)] $\wp$ hat einen Pol der Ordnung 2 bei $z = 0 + \Lambda \in T$ und muss mindestens eine Nullstelle besitzen.\footnote{Betrachte dazu $\wp$ als doppelt-periodische Funktion auf $\mathbb{C}$ und benutze ein geeignetes Pol-/Nullstellen zählendes Integral.}
+	\item[ii)] Zeige: $\wp$ hat einen Pol der Ordnung 2 bei $z = 0 + \Lambda_\tau \in T$ und muss mindestens eine Nullstelle besitzen.\footnote{Betrachte dazu $\wp$ als doppelt-periodische Funktion auf $\mathbb{C}$ und benutze ein geeignetes Pol-/Nullstellen zählendes Integral.}
 \end{enumerate}
 
-\medskip Zur Aufgabe 11 beachte, dass die Lokalisierung der Nullstellen nicht trivial ist, vgl. 
+\medskip \emph{Hinweis:} Die Lokalisierung der Nullstellen ist nicht trivial:\footnote{vgl: M. Eichler, D. Zagier, \emph{On the Zeros of the Weierstraß} $\wp$\emph{-function}, Math. Ann. 258, 399–407 (1982)} 
 
 \medskip 
 
 \includegraphics[scale=0.8]{Theorem_ZerosWeierstrass}
 
 \medskip
-
-\textit{(aus M. Eichler, D. Zagier, On the Zeros of the Weierstraß $\wp$-function, Math. Ann. 258, 399–407 (1982))}
-
-
 
 \end{document}
