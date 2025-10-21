@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.24)  15 OCT 2025 15:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.24)  21 OCT 2025 11:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -723,7 +723,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14.4> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 106.
 \c@labl=\count334
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 139.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 122.
 
 
 [1
@@ -737,13 +737,13 @@ L3 programming layer <2025-04-29>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16797 strings out of 469922
- 317002 string characters out of 5469149
- 716431 words of memory out of 5000000
- 43281 multiletter control sequences out of 15000+600000
+ 16802 strings out of 469922
+ 317123 string characters out of 5469149
+ 719431 words of memory out of 5000000
+ 43286 multiletter control sequences out of 15000+600000
  645504 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,7n,107p,3225b,221s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,8n,107p,3225b,221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -755,7 +755,7 @@ cal/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/th
 oma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users
 /thoma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Us
 ers/thoma/AppData/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Blatt02.pdf (1 page, 120970 bytes).
+Output written on Blatt02.pdf (1 page, 123474 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
