@@ -126,7 +126,7 @@ Auf diesem Blatt bezeichnet $\Lambda_\tau:=\mathbb{Z}1\oplus\mathbb{Z}\tau$ stet
 
 Zeige: Wenn $\tau' = \frac{a\tau + b}{c\tau + d}$ gilt, dann sind die beiden Tori $\mathbb{C}/\Lambda_\tau$ und $\mathbb{C}/\Lambda_{\tau'}$ isomorph.
 
-\emph{Hinweis}: Überlege zuerst, warum $\tau'\in\mathbb{H}$ gilt.
+\emph{Hinweis}: Überlege zuerst, warum $\mathbb{C}/\Lambda_{\tau'}$ wohldefiniert ist.
 
 \medskip
 
@@ -140,18 +140,19 @@ Zeige: Wenn $\tau' = \frac{a\tau + b}{c\tau + d}$ gilt, dann sind die beiden Tor
 
 \Aufg Auf $\mathbb{CP}^1$ betrachte die beiden offenen Mengen
 \[
-U_0 := \mathbb{C} \quad \text{und} \quad U_1 := \mathbb{CP}^1 \setminus \{0\}.
+U_0 := \mathbb{C} \quad \text{und} \quad U_\infty := \mathbb{CP}^1 \setminus \{0\}.
 \]
-Sei $m \in \mathbb{Z}$. 
+ 
 \begin{enumerate}
-	\item Zeige, dass durch die Zuordnung
+	\item Sei $m \in \mathbb{Z}$. Zeige, dass durch die Zuordnung
 	\[
-	U \mapsto \{ (f_0, f_1) \mid f_j : U \cap U_j \to \mathbb{C} \text{ holomorph mit } \forall z \in U \cap U_0 \cap U_1: f_0(z) = z^{m} f_1(z) \} 
+	U \mapsto \{ (f_0, f_\infty) \mid f_j : U \cap U_j \to \mathbb{C} \text{ holomorph mit } \forall z \in U \cap U_0 \cap U_\infty: f_0(z) = z^{m} f_\infty(z) \} 
 	\]
-	eine Garbe auf $\mathbb{CP}^1$ definiert ist (was sind die Restriktionen?). Wir bezeichnen sie mit $\mathcal{O}_{\mathbb{CP}^1}(m)$.
-	\item  Bestimme die \textit{globalen Schnitte} $\mathcal{O}_{\mathbb{CP}^1}(m)(\mathbb{CP}^1)$ dieser Garbe in Abhängigkeit von $m$.
+	eine Garbe von $\mathbb{C}$-Vektorräumen auf $\mathbb{CP}^1$ definiert ist. Wir bezeichnen sie mit $\mathcal{O}_{\mathbb{CP}^1}(m)$.
+	\item  Bestimme die \textit{globalen Schnitte} $\mathcal{O}_{\mathbb{CP}^1}(m)(\mathbb{CP}^1)$ dieser Garbe in Abhängigkeit von $m\in\mathbb{Z}$.
+	
+	\emph{Hinweis:} Betrachte die Potenzreihenentwicklungen der holomorphen Funktionen $f_0(z)$ bzw. $f_\infty(\frac{1}{z})$.
 \end{enumerate}
-
 
 \medskip
 
@@ -159,17 +160,16 @@ Sei $m \in \mathbb{Z}$.
 \[
 \wp(z) := \frac{1}{z^2} + \sum_{\lambda \in \Lambda_\tau \setminus \{0\}} \left( \frac{1}{(z + \lambda)^2} - \frac{1}{\lambda^2} \right)
 \]
-\begin{enumerate}
-	\item[i)]Begründe, dass dies eine meromorphe Funktion auf dem Torus $T := \mathbb{C}/\Lambda_\tau$ definiert.
+Man kann mit Mitteln der Funktionentheorie zeigen, dass dies eine meromorphe Funktion auf dem Torus $T := \mathbb{C}/\Lambda_\tau$ definiert (nicht gefordert).
 	
-	\item[ii)] Zeige: $\wp$ hat einen Pol der Ordnung 2 bei $z = 0 + \Lambda_\tau \in T$ und muss mindestens eine Nullstelle besitzen.\footnote{Betrachte dazu $\wp$ als doppelt-periodische Funktion auf $\mathbb{C}$ und benutze ein geeignetes Pol-/Nullstellen zählendes Integral.}
-\end{enumerate}
+Zeige: $\wp$ hat einen Pol der Ordnung 2 bei $z = 0 + \Lambda_\tau \in T$ und muss mindestens eine Nullstelle besitzen.\footnote{Betrachte dazu $\wp$ als doppelt-periodische Funktion auf $\mathbb{C}$ zum Gitter $\Lambda_\tau$ auf, d.h. $\forall \lambda \in \Lambda_\tau:\wp(z+\lambda)=\wp(z)$, und benutze ein geeignetes Pol-/Nullstellen zählendes Integral.}
 
-\medskip \emph{Hinweis:} Die Lokalisierung der Nullstellen ist nicht trivial:\footnote{vgl: M. Eichler, D. Zagier, \emph{On the Zeros of the Weierstraß} $\wp$\emph{-function}, Math. Ann. 258, 399–407 (1982)} 
+ 
+\emph{Hinweis:} Die Lokalisierung der Nullstellen ist nicht trivial:\footnote{vgl: M. Eichler, D. Zagier, \emph{On the Zeros of the Weierstraß} $\wp$\emph{-function}, Math. Ann. 258, 399–407 (1982)} 
 
 \medskip 
 
-\includegraphics[scale=0.8]{Theorem_ZerosWeierstrass}
+\includegraphics[scale=0.74]{Theorem_ZerosWeierstrass}
 
 \medskip
 
