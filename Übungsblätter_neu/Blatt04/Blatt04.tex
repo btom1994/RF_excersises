@@ -14,7 +14,22 @@
 \usepackage{dsfont}
 \usepackage{xy}\xyoption{all}
 \usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
 
+\lstset{
+	language=Python,
+	basicstyle=\ttfamily\small,
+	backgroundcolor=\color{gray!5},
+	frame=lines,
+	numbers=left,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{green!50!black},
+	stringstyle=\color{orange!80!black},
+	showstringspaces=false,
+	tabsize=4
+}
 
 %%%%%%%%
 \usepackage{graphicx}
@@ -106,7 +121,7 @@
 \centerline{\Large Aufgaben zu {\it Riemannsche Flächen} -- WS 2025/26}
 
 
-\medskip \centerline{4. Blatt}
+\medskip \centerline{4. Blatt -- Abgabe 12.11, Übung 13.11}
 
 
 \setcounter{aufg}{11}
@@ -119,7 +134,7 @@
 \[
 f : \mathbb{CP}^1 \to \mathbb{CP}^1, \quad z \mapsto \tfrac{1}{2} \left( z + \frac{1}{z} \right).
 \]
-Wer will, kann das Bild des Einheitskreises $S^1 \subset \mathbb{C}$ zeichnen und erklären, warum diese Transformation $f$ im Flugzeugbau eine Rolle gespielt haben könnte.
+\emph{Hinweis:} Es handelt sich hierbei um die \emph{Joukowski Transformation}. Der unten abgebildete SageMath-Code plottet die Bilder von Kreisen unter dieser Tranformation. Wer will, kann damit herumspielen und erklären, warum diese Transformation eine Rolle im Flugzeugbau spielen könnte.
 
 \medskip
 
@@ -145,5 +160,24 @@ p : X \to Y, \quad z \mapsto \sin(z).
 
 \Aufg Sei $p : X \to Y$ eine holomorphe Überlagerung Riemannscher Flächen. Sei $\varphi : X \to X$ ein Homöomorphismus, so dass $p \circ \varphi = p$ (also eine sogenannte \emph{Decktransformation}). Zeige, dass $\varphi$ dann automatisch schon biholomorph ist.
 
+\vspace*{1.5cm}
+\bfseries{SageMath-Code zu Aufgabe 12:}
+\begin{lstlisting}
+	r = 1.10
+	x0 = -0.1
+	y0 = 0.08
+	var('t')
+	
+	def kreisx(t):
+	return (x0 + r*cos(2*pi*t))
+	
+	def kreisy(t):
+	return (y0 + r*sin(2*pi*t))
+	
+	def jouko(x, y):
+	return (x + x/(x^2 + y^2), y - y/(x^2 + y^2))
+	
+	parametric_plot(jouko(kreisx(t), kreisy(t)), (t, 0, 1))
+\end{lstlisting}
 
 \end{document}
