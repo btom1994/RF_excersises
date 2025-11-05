@@ -113,7 +113,7 @@
 
 \vspace*{1cm}
 
-\Aufg Sei $Y$ eine Mannigfaltigkeit und $y_0 \in Y$. Ferner sei $\alpha$ ein Weg von $y_0$ nach $y \in Y$. Wie im Beweis der Existenz der universellen Überlagerung sei für eine einfach zusammenhängende, offene Umgebung $U$ von $y$
+\Aufg Wir wollen in dieser Aufgabe die Behauptung 1 im Beweis der Existenz der universelle  Überlagerung zeigen. Sei also $Y$ eine Mannigfaltigkeit und $y_0 \in Y$. Ferner sei $\alpha$ ein Weg von $y_0$ nach $y \in Y$. Für eine einfach zusammenhängende, offene Umgebung $U$ von $y$ sei
 \[
 \left(U, [\alpha] \right) := \{ (z, [\alpha \cdot \gamma]) \mid z \in U, \ \gamma \text{ ein Weg in } U \text{ von } y \text{ nach } z \}.
 \]
@@ -125,38 +125,44 @@ eine Topologie definiert ist.
 
 \medskip
 
-\Aufg Sei wieder $\Gamma := \mathbb{Z}\omega_1 \oplus \mathbb{Z}\omega_2$ ein vollständiges Gitter in $\mathbb{C}$ und $T := \mathbb{C}/\Gamma$ der entsprechende Torus. Wir nennen eine meromorphe Funktion $f : T \to \mathbb{C}\mathbb{P}^1$ \emph{gerade}, wenn die zugehörige doppelt-periodische, meromorphe Funktion auf $\mathbb{C}$ es ist (also $f(-z) = f(z)$ erfüllt) und \emph{ungerade} analog ($f(-z) = -f(z)$). Im Folgenden sei $f$ immer eine doppelt-periodische Funktion bzgl. $\Gamma$. Zeige:
+\Aufg Sei wieder $\Lambda$ ein Gitter in $\mathbb{C}$ zu $\tau\in \mathbb{H}$ und $T := \mathbb{C}/\Lambda$ der entsprechende Torus. Wir nennen eine meromorphe Funktion $f : T \to \mathbb{C}\mathbb{P}^1$ \emph{gerade}, wenn die zugehörige doppelt-periodische, meromorphe Funktion auf $\mathbb{C}$ es ist (also $f(-z) = f(z)$ erfüllt) und \emph{ungerade} analog ($f(-z) = -f(z)$). Im Folgenden sei $f$ immer eine doppelt-periodische Funktion bzgl. $\Lambda$. Zeige:
 
 \begin{enumerate}
-	\item[i)] Die Weierstraß-Funktion $\wp$ ist gerade, ihre Ableitung $\wp'$ (als doppelt-periodische Funktion) ungerade.
-	\item[ii)] Jedes $f$ hat eine Darstellung $f = f_{\text{ev}} + f_{\text{odd}}$ mit geradem $f_{\text{ev}}$ und ungeradem $f_{\text{odd}}$.
-	\item[iii)] Ist $f$ gerade, so existiert eine rationale Funktion $R(z) \in \mathbb{C}(z)$, so dass
+	\item Die Weierstraß $\wp$-Funktion (vgl. Blatt 3, Aufgabe 11) ist gerade und ihre Ableitung $\wp'$ ungerade.
+	
+	\item Jedes $f$ hat eine Darstellung $f = f_{\text{ev}} + f_{\text{odd}}$ mit geradem $f_{\text{ev}}$ und ungeradem $f_{\text{odd}}$.
+	
+	\item Ist $f$ gerade, so existiert eine rationale Funktion $R(z) \in \mathbb{C}(z)$, so dass
 	\[
 	f(z) = R(\wp(z)).
 	\]
-	\item[iv)] Jedes $f$ hat die Darstellung $f(z) = R(\wp(z)) + \wp'(z) \cdot S(\wp(z))$ mit $R, S \in \mathbb{C}(z)$.
-	\item[v)] Die gerade Funktion $\wp'(z)^2$ hat die Darstellung
+	
+	\emph{Hinweis:} Zu finden ist also ein $R \in \mathbb{C}(z) = \mathcal{M}(\mathbb{CP}^1)$, so dass
+	\[
+	\xymatrix{
+		T \ar[d]_{\wp}  \ar[dr]^{f} & \\
+		\mathbb{CP}^1 \ar[r]^{R} & \mathbb{CP}^1
+	}
+	\]
+	kommutiert. Untersuche dazu die geometrischen Eigenschaften der eigentlichen Abbildung $\wp$: Wo ist sie verzweigt? Wieso sind die Punkte $b_1 :=\wp( \tfrac{1}{2})$, $b_2 := \wp(\tfrac{\tau}{2})$ und $b_3 := \wp(\tfrac{1+\tau}{2})$ und $b_4 := \infty$ besonders? Welche Überlagerung ist $\wp$ außerhalb der verzweigten Punkte im Sinne von: welche Fasern hat diese Überlagerung und was hat das damit zu tun, dass $\wp$ gerade ist? Was nutzt es dann, dass $f$ auch gerade sein soll?
+	
+	\item Jedes $f$ hat die Darstellung $f(z) = R(\wp(z)) + \wp'(z) \cdot S(\wp(z))$ mit $R, S \in \mathbb{C}(z)$.
+	
+	\item Die gerade Funktion $\wp'(z)^2$ hat die Darstellung
 	\[
 	\wp'(z)^2 = 4\wp(z)^3 - g_2 \wp(z) - g_3
 	\]
 	mit $g_2 = 60 G_4$ und $g_3 = 140 G_6$, wobei
 	\[
-	G_k := \sum_{\lambda \in \Gamma \setminus \{0\}} \lambda^{-k}.
+	G_k := \sum_{\lambda \in \Lambda \setminus \{0\}} \lambda^{-k}.
 	\]
 \end{enumerate}
 
-\textit{Hinweis zu iii):} Zu finden ist also ein $R \in \mathbb{C}(z) = \mathcal{M}(\mathbb{CP}^1)$, so dass
-\[
-\xymatrix{
-	T \ar[d]_{\wp}  \ar[dr]^{f} & \\
-	\mathbb{CP}^1 \ar[r]^{R} & \mathbb{CP}^1
-}
-\]
-kommutiert. Untersuche dazu die geometrischen Eigenschaften der eigentlichen Abbildung $\wp$: Wo ist sie verzweigt? Wieso sind die Punkte $b_1 := \tfrac{\omega_1}{2}$, $b_2 := \tfrac{\omega_2}{2}$ und $b_3 := \tfrac{\omega_1+\omega_2}{2}$ und $b_4 := \infty$ besonders? Welche Überlagerung ist $\wp$ außerhalb der verzweigten Punkte im Sinne von: welche Fasern hat diese Überlagerung und was hat das damit zu tun, dass $\wp$ gerade ist? Was nutzt es dann, dass $f$ auch gerade sein soll?
+
 
 \medskip
 
-\Aufg Folgere aus der vorhergehenden Aufgabe, dass für einen Torus $\mathbb{C}/\Gamma$ gilt:
+\Aufg Folgere aus der vorhergehenden Aufgabe, dass für einen Torus $T=\mathbb{C}/\Lambda$ gilt:
 \[
 \mathcal{M}(T) \cong \mathbb{C}(z)[w] / (w^2 - 4z^3 + g_2z + g_3).
 \]
