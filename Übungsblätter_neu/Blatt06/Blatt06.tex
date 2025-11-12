@@ -139,7 +139,7 @@
 \end{enumerate}
 
 \Aufg Sei 
-$Y := \mathbb{C} \setminus \{0,1\}$, $X := \mathbb{C} \setminus \{0, \pm i, \pm i\sqrt{2}\}$ und
+$X := \mathbb{C} \setminus \{0, \pm i, \pm i\sqrt{2}\}$, $Y := \mathbb{C} \setminus \{0,1\}$ und
 \[
 f : X \to Y, \quad z \mapsto (z^2 + 1)^2.
 \]
@@ -149,24 +149,44 @@ Zeige, dass $f$ eine unverzweigte, 4-blättrige Überlagerung ist, die aber nich
 \]
 gilt.
 
-\Aufg Seien $\Lambda, \Gamma \subset \mathbb{C}$ vollständige Gitter und sei 
-$f : \mathbb{C}/\Lambda \to \mathbb{C}/\Gamma$
-eine nicht-konstante holomorphe Abbildung mit 
-$f(0 \bmod \Lambda) = 0 \bmod \Gamma$.
-Zeige, dass es ein $\alpha \in \mathbb{C}^\times$ gibt, so dass 
-$ \alpha \Lambda \subset \Gamma $
-und dass das Diagramm
-\[
-\xymatrix{
-	\mathbb{C} \ar[d] \ar[r]^{z\mapsto\alpha z} & \mathbb{C} \ar[d] \\
-	\mathbb{C}/\Lambda \ar[r]^{f} & \mathbb{C}/\Gamma
-}
-\]
-kommutiert. Zeige ferner, dass $f$ eine unverzweigte Überlagerung ist und
-\[
-\mathrm{Deck}(f) \cong \Gamma / \alpha \Lambda
-\]
-gilt.
+\Aufg Sei \( f : X \to Y \) eine holomorphe Abbildung zwischen kompakten Riemannschen Flächen. Sind dann \( S \subset X \) die Verzweigungspunkte und \( S' = f(S) \), so ist 
+\( f|_{X \setminus S} : X \setminus S \to Y \setminus S' \) 
+eine unverzweigte Überlagerung. Deren Blätterzahl sei mit \( m \in \mathbb{N} \) bezeichnet.
+\begin{enumerate} 
+	\item Es gibt Triangulierungen von \( X \) und \( Y \), so dass \( f \) Ecken auf Ecken, 
+	Kanten auf Kanten und Flächen auf Flächen der Triangulierung abbildet.
+	
+	\item Mit der offensichtlichen Notation jeweils für die Anzahl der Ecken/Kanten/Flächen gilt:
+	\[
+	F(X) = m \cdot F(Y), \quad K(X) = m \cdot K(Y), \quad 
+	E(X) = m \cdot E(Y \setminus S') + \#S.
+	\]
+	
+	\item Ist \( X \) eine kompakte Riemannsche Fläche vom Geschlecht \( g \), so gilt für die Eulercharakteristik:
+	\[
+	\chi(X) = 2 - 2g.
+	\]
+\end{enumerate}
+
+
+%\Aufg Seien $\Lambda, \Gamma \subset \mathbb{C}$ vollständige Gitter und sei 
+%$f : \mathbb{C}/\Lambda \to \mathbb{C}/\Gamma$
+%eine nicht-konstante holomorphe Abbildung mit 
+%$f(0 \bmod \Lambda) = 0 \bmod \Gamma$.
+%Zeige, dass es ein $\alpha \in \mathbb{C}^\times$ gibt, so dass 
+%$ \alpha \Lambda \subset \Gamma $
+%und dass das Diagramm
+%\[
+%\xymatrix{
+%	\mathbb{C} \ar[d] \ar[r]^{z\mapsto\alpha z} & \mathbb{C} \ar[d] \\
+%	\mathbb{C}/\Lambda \ar[r]^{f} & \mathbb{C}/\Gamma
+%}
+%\]
+%kommutiert. Zeige ferner, dass $f$ eine unverzweigte Überlagerung ist und
+%\[
+%\mathrm{Deck}(f) \cong \Gamma / \alpha \Lambda
+%\]
+%gilt.
 
 
 

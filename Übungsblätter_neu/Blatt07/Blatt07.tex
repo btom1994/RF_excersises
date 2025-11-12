@@ -112,16 +112,9 @@
 \setcounter{aufg}{21}
 \newcounter{labl}
 
-\vspace*{1cm}
-
-Auf diesem Blatt sei \( f : X \to Y \) eine holomorphe Abbildung kompakter Riemannscher Flächen. 
-Sind dann \( S \subset X \) die Verzweigungspunkte und \( S' = f(S) \), so ist 
-\( f|_{X \setminus S} : X \setminus S \to Y \setminus S' \) 
-eine unverzweigte Überlagerung. Deren Blätterzahl sei mit \( m \in \mathbb{N} \) bezeichnet.
-
 \vspace{1em}
 
-\noindent\textbf{Definition:} Der \emph{Verzweigungsindex} von \( f \) bei \( x \in X \) ist definiert als
+\noindent\textbf{Definition:} Sei \( f : X \to Y \) eine holomorphe Abbildung kompakter Riemannscher Flächen. Der \emph{Verzweigungsindex} von \( f \) bei \( x \in X \) ist definiert als
 \[
 b_x(f) := \deg_x(f) - 1.
 \]
@@ -135,34 +128,20 @@ b(f) := \sum_{x \in X} b_x(f).
 
 \noindent\textbf{Riemann--Hurwitz--Formel:}
 Ist \( f : X \to Y \) eine holomorphe Abbildung kompakter Riemannscher Flächen 
-mit totalem Verzweigungsgrad \( b(f) \), so gilt für die Geschlechter von \( X \) und \( Y \):
+mit Blätterzahl $m\in\mathbb{N}$ und totalem Verzweigungsgrad \( b(f) \), so gilt für die Geschlechter von \( X \) und \( Y \):
 \[
 g(X) = \frac{b(f)}{2} + m \cdot ( g(Y) - 1 ) + 1.
 \]
 
 \vspace{1em}
 
-\Aufg Wir wollen in dieser Aufgabe die Riemann-Hurwitz-Formel beweisen.
+\Aufg Wir wollen in dieser Aufgabe die Riemann-Hurwitz-Formel beweisen. 
 
 \vspace{0.5em}
 
 Dabei gehen wir wie folgt vor:
 
-\begin{enumerate}[label=\roman*)]
-	\item Es gibt Triangulierungen von \( X \) und \( Y \), so dass \( f \) Ecken auf Ecken, 
-	Kanten auf Kanten und Flächen auf Flächen der Triangulierung abbildet.
-	
-	\item Mit der offensichtlichen Notation jeweils für die Anzahl der Ecken/Kanten/Flächen gilt:
-	\[
-	F(X) = m \cdot F(Y), \quad K(X) = m \cdot K(Y), \quad 
-	E(X) = m \cdot E(Y \setminus S') + \#S.
-	\]
-	
-	\item Ist \( X \) eine kompakte Riemannsche Fläche vom Geschlecht \( g \), so gilt für die Eulercharakteristik:
-	\[
-	\chi(X) = 2 - 2g.
-	\]
-	
+\begin{enumerate}	
 	\item In obiger Situation gilt:
 	\[
 	\chi(X) = m \cdot \chi(Y) - b(f).
