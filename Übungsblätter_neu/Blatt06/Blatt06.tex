@@ -147,9 +147,15 @@ f : X \to Y, \quad z \mapsto (z^2 + 1)^2.
 \]
 Zeige, dass $f$ eine unverzweigte, 4-blättrige Überlagerung ist, die aber nicht normal ist, und dass
 \[
-\mathrm{Deck}(X|Y) = \{\mathrm{id}, (z \mapsto -z)\}
+\mathrm{Deck}(X|Y) = \{\mathrm{id}, -\mathrm{id}\}
 \]
 gilt.
+
+\emph{Hinweis:} Die Teilmengenbeziehung $\{ \mathrm{id}, -\mathrm{id} \}\subseteq \mathrm{Deck}(X|Y)$ ist einfach zu zeigen. Die andere Teilmengenbeziehung ist schwieriger: Angenommen wir haben $\phi\in \mathrm{Deck}(X|Y)$, d.h. $\phi(z)^2+1=\pm(z^2+1)$. Der positive Fall liefert $\phi \in \{\mathrm{id}, -\mathrm{id}\}$. 
+
+ \noindent Ab hier wird die Aufgabe sehr schwierig! Für den negativen Fall: $\phi$ ist also das Quadrat einer Abbildung $\psi:X\rightarrow\mathbb{C}\setminus\{0\}$, d.h. $\phi$ ist der Lift von $\psi$ unter der Überlagerung $p:\mathbb{C}\setminus\{0\}\rightarrow\mathbb{C}\setminus\{0\},z\mapsto z^2$. Jetzt betrachtet man die induzierten Abbildungen auf den Fundamentalgruppen. Man kann $\pi_1(\mathbb{C}\setminus\{0\},z_0)$ direkt ausrechnen. Was macht $p_*$ damit? Mit einer geschickt gewählten Schleife in $X$ bekommen wir einen Widerspruch.
+ 
+ \noindent Dass die Überlagerung nicht normal ist, ist dafür wieder einfach zu zeigen.
 
 \medskip
 
@@ -165,10 +171,7 @@ eine unverzweigte Überlagerung. Deren Blätterzahl sei mit \( m \in \mathbb{N} 
 	E(X) = m \cdot E(Y \setminus S') + \#S.
 	\]
 	
-	\item Ist \( X \) kompakte Riemannsche Fläche vom Geschlecht \( g \), so gilt für die Eulercharakteristik:
-	\[
-	\chi(X) = 2 - 2g.
-	\]
+	
 \end{enumerate}
 
 
