@@ -116,7 +116,7 @@
 
 \noindent\textbf{Definition:} Sei \( f : X \to Y \) eine holomorphe Abbildung kompakter Riemannscher Flächen. Der \emph{Verzweigungsindex} von \( f \) bei \( x \in X \) ist definiert als
 \[
-b_x(f) := \deg_x(f) - 1.
+b_x(f) := \text{ord}_x(f) - 1.
 \]
 Der \emph{totale Verzweigungsgrad} von \( f \) ist definiert als
 \[
@@ -132,7 +132,7 @@ mit Blätterzahl $m\in\mathbb{N}$ und totalem Verzweigungsgrad \( b(f) \), so gi
 \[
 g(X) = \frac{b(f)}{2} + m \cdot ( g(Y) - 1 ) + 1.
 \]
-
+Insbesondere ist der totale Verzweigungsgrad damit immer gerade.
 \vspace{1em}
 
 \Aufg Wir wollen in dieser Aufgabe die Riemann-Hurwitz-Formel beweisen. 
@@ -146,11 +146,34 @@ Dabei gehen wir wie folgt vor:
 	\[
 	\chi(X) = 2 - 2g.
 	\]	
+	Damit ist die $\chi(X)$ insbesondere unabhängig von der Triangulierung auf $X$.
 	\item In obiger Situation gilt:
 	\[
 	\chi(X) = m \cdot \chi(Y) - b(f).
 	\]
+	
+	\emph{Hinweis:} Man benutzt hierfür Aufgabe 21.
 	\item Folgere nun die Riemann-Hurwitz-Formel.
+\end{enumerate}
+
+\medskip
+
+\Aufg Zeige mithilfe der Riemann-Hurwitz-Formel, dass für einen Torus $T$ gilt: 
+$$g(T)=1.$$
+
+\emph{Hinweis:} Benutze hierfür die beliebte Aufgabe 17 iii).
+
+\medskip
+
+\Aufg Im Folgenden seien $X,Y$ kompakte Riemannsche Flächen. Leite aus der Riemann–Hurwitz-Formel her:
+
+\begin{enumerate}
+	\item Sei \( f : X \to Y \) holomorph und nicht konstant. Dann gilt:
+	\[
+		g(X) \ge g(Y)
+	\] 
+	\item Wenn \( f : \mathbb{CP}^1 \to Y \) holomorph und nicht konstant ist, dann ist \( Y \)
+	homöomorph zur Sphäre.
 \end{enumerate}
 
 
