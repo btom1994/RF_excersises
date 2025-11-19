@@ -158,7 +158,7 @@ gilt.
 \medskip
 
 \Aufg Sei \( f : X \to Y \) eine holomorphe Abbildung zwischen kompakten Riemannschen Flächen. Sind dann \( S \subset X \) die Verzweigungspunkte und \( S' = f(S) \), so ist 
-\( f|_{X \setminus S} : X \setminus S \to Y \setminus S' \) 
+\( f|_{X \setminus f^{-1}(S)} : X \setminus f^{-1}(S) \to Y \setminus S' \) 
 eine unverzweigte Überlagerung. Deren Blätterzahl sei mit \( m \in \mathbb{N} \) bezeichnet. Zeige:
 \begin{enumerate} 
 	\item Es gibt Triangulierungen von \( X \) und \( Y \), so dass \( f \) Ecken auf Ecken, Kanten auf Kanten und Flächen auf Flächen abbildet.
@@ -166,7 +166,7 @@ eine unverzweigte Überlagerung. Deren Blätterzahl sei mit \( m \in \mathbb{N} 
 	\item Mit der offensichtlichen Notation jeweils für die Anzahl der Ecken/Kanten/Flächen gilt:
 	\[
 	F(X) = m \cdot F(Y), \quad K(X) = m \cdot K(Y), \quad 
-	E(X) = m \cdot E(Y \setminus S') + \#S.
+	E(X) = m \cdot E(Y \setminus S') + \#f^{-1}(S').
 	\]
 	
 	
