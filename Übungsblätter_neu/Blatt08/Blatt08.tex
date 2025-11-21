@@ -113,38 +113,40 @@
 \medskip \centerline{8. Blatt}
 
 
-\setcounter{aufg}{22}
+\setcounter{aufg}{24}
 \newcounter{labl}
 
 \vspace*{1cm}
 
-\Aufg Sei $X$ eine Riemannsche Fläche und $z:U\to U'$ eine Karte um $p$. Zeige, dass für das maximale Ideal $m_p\lhd\mathcal{E}_p$ der bei $p\in X$ verschwindenden $C^\infty$-Funktionen gilt:
-\[
-m_p^2=\left\{  \varphi\in m_p \ \Big|\quad \ \frac{\partial}{\partial x}\Big|_p \varphi=0 = \frac{\partial}{\partial y}\Big|_p \varphi \right\}.
-\]
-
-Beweise dazu vorher das folgende Lemma.
-
-\begin{lemma}
-	Ist $V\subset\mathbb{C}$ offen und sternförmig um $0$, sowie $f:V\to\mathbb{C}$ eine $C^\infty$-Funktion mit $f(0)=0$, dann existieren $C^\infty$-Funktionen $f_j:V\to\mathbb{C}$ für $j=1,2$, so dass
+\Aufg
+\begin{enumerate}
+	\item Beweise das folgende Lemma.
+	\begin{lemma}
+		Ist $V\subset\mathbb{C}$ offen und sternförmig um $0$, sowie $f:V\to\mathbb{C}$ eine $C^\infty$-Funktion mit $f(0)=0$, dann existieren $C^\infty$-Funktionen $f_j:V\to\mathbb{C}$ für $j=1,2$, so dass
+		\[
+		f(x+iy) = x\cdot f_1(x+iy) + y\cdot f_2(x+iy).
+		\]
+	\end{lemma}
+	
+	\emph{Hinweis:} \(f(x+iy)=\int_0^1 \frac{d}{dt} f(tx+ity)\,dt=\ldots\)
+	
+	\item  Sei $X$ eine Riemannsche Fläche und $z:U\to U'$ eine Karte um $p$. Zeige, dass für das maximale Ideal $m_p\lhd\mathcal{E}_p$ der bei $p\in X$ verschwindenden $C^\infty$-Funktionen gilt:
 	\[
-	f(x+iy) = x\cdot f_1(x+iy) + y\cdot f_2(x+iy).
+	m_p^2=\left\{  \varphi\in m_p \ \Big|\quad \ \frac{\partial}{\partial x}\Big|_p \varphi=0 = \frac{\partial}{\partial y}\Big|_p \varphi \right\}.
 	\]
-\end{lemma}
+\end{enumerate}
 
-\emph{Hinweis:} \(f(x+iy)=\int_0^1 \frac{d}{dt} f(tx+ity)\,dt=\ldots\)
-
-\vspace{1em}
+\medskip
 
 \Aufg Sei $X$ eine Riemannsche Fläche. Dann ist induziert die komplexe Struktur von $X$ auch eine differenzierbare Struktur auf $X$ und macht diese zu einer 2-dimensionalen reellen Mannigfaltigkeit (daher auch der Name Fläche). Es bezeichne $T_p^{\mathbb{R}}X$ den reell 2-dimensionalen Tangentialraum von $X$ bei $p$. Wieso definiert die komplexe Struktur in kanonischer Weise die Struktur eines 1-dimensionalen $\mathbb{C}$-Vektorraums auf $T_p^{\mathbb{R}}X$?
 
 \emph{Hinweis: Dazu muss man sich an Analysis III bzw.\ an die Kenntnis über Mannigfaltigkeiten erinnern, z.\,B.\ dass eine differenzierbare Abbildung $h:U\to\mathbb{R}^2=\mathbb{C}$ eine $\mathbb{R}$-lineare Abbildung $d_p h : T_p^{\mathbb{R}}X \to \mathbb{R}^2=\mathbb{C}$ liefert.}
 
-\vspace{1em}
+\medskip
 
 \Aufg Betrachte die holomorphe \(1\)-Form $\dfrac{dz}{1+z^2}$ auf $\mathbb{C}\setminus\{\pm i\}$. Zeige, dass diese eine holomorphe Fortsetzung auf $\mathbb{CP}^1\setminus\{\pm i\}$ hat. Wie schreibt man diese in der üblichen Karte für $\mathbb{CP}^1$ bei $\infty$?
 
-\vspace{1em}
+\medskip
 
 \Aufg Ist $f:X\to Y$ holomorph, dann hat man für offenes $V\subset Y$ den pull-back:
 \[
@@ -155,8 +157,5 @@ Zeige, dass man in folgender Weise ein $f^*$ für holomorphe $1$-Formen hat: Ist
 f^*(\omega|_W) := f^*\!\bigl(\varphi(z)\bigr)\, d(f^*z).
 \]
 Wie ist das zu lesen und warum ist das unabhängig von der Wahl der Karte? Hat man letzteres gesehen, folgt, dass man damit $f^*\omega\in \Omega^1(f^{-1}(V))$ wohldefiniert erhalten hat.
-
-
-
 
 \end{document}
