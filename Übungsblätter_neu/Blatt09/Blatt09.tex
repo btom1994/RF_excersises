@@ -109,40 +109,40 @@
 \medskip \centerline{9. Blatt}
 
 
-\setcounter{aufg}{27}
+\setcounter{aufg}{28}
 \newcounter{labl}
 
 \vspace*{1cm}
 
-\Aufg Zeigen Sie den Residuensatz auf $\mathbb{CP}^1$ mit Hilfe des Residuensatzes aus der Funktionentheorie. 
+\Aufg \begin{enumerate}
+	\item Zeige den Residuensatz auf $\mathbb{CP}^1$ mit Hilfe des Residuensatzes aus der Funktionentheorie. 
+	
+	\emph{Hinweis:} Wähle einen geeigneten Integrationsweg auf $\mathbb{CP}^1=\mathbb{C}\sqcup\{\infty\}$.
+	
+	\item Sei $f:X\to\mathbb{CP}^1$ eine nicht-konstante, holomorphe Abbildung, $X$ kompakte Riemannsche Fläche. Wir wissen (aus der Überlagerungstheorie), dass jeder Wert $c\in\mathbb{CP}^1$ gleich oft angenommen wird (mit Vielfachheit). Wie folgt das auch aus dem Residuensatz?
+\end{enumerate}
 
-\emph{Hinweis:} Wählen Sie einen geeigneten Integrationsweg auf $\mathbb{CP}^1=\mathbb{C}\sqcup\{\infty\}$.
+\medskip
 
-\vspace{0.5em}
-
-\Aufg Sei $f:X\to\mathbb{CP}^1$ eine nicht-konstante, holomorphe Abbildung, $X$ kompakte Riemannsche Fläche. Wir wissen (aus der Überlagerungstheorie), dass jeder Wert $c\in\mathbb{CP}^1$ gleich oft angenommen wird (mit Vielfachheit). Wie folgt das auch aus dem Residuensatz?
-
-\vspace{0.5em}
-
-\Aufg Sei $X$ eine Riemannsche Fläche und $\gamma$ ein geschlossener Weg in $X$, der weder Null- noch Polstelle einer meromorphen Funktion $f\in\mathcal{M}(X)$ trifft. Zeigen Sie, dass
-\[
-\int_\gamma \frac{df}{f} \in 2\pi i\mathbb{Z}
-\]
-gilt.
-
-\vspace{0.5em}
-
-\Aufg Sei $\Lambda=\mathbb{Z}\oplus\mathbb{Z}\tau\subset\mathbb{C}$ ein vollständiges Gitter und $T=\mathbb{C}/\Lambda$ der entsprechende Torus. Zeigen Sie, dass für eine meromorphe Funktion $f\in\mathcal{M}(T)$ gilt:
+\Aufg Sei $T=\mathbb{C}/\Lambda$ ein Torus. Zeige, dass für $f\in\mathcal{M}(T)$ gilt:
 \[
 \sum_{p\in T} \nu_p(f)\cdot p = 0 \in T,
 \]
-wobei \(\nu_p(f)\) die Null-/Polstellenordnung\footnote{Beachten Sie den Unterschied zur Definition der Ordnung einer holomorphen Abbildung $g:X\rightarrow Y$ (§3), bei der wir zur Definition	Karten $h$ für $X$ und $k$ für $Y$ gewählt haben, so dass $h(p) = 0$ und $k(f(p)) = 0$. Damit ist $\text{ord}_p(f) \geq 1$. Im Gegensatz dazu ist $\nu_p(f) = 0$, wenn $f$ dort keine Null-/Polstelle hat. Man könnte das auch so ausdrücken, dass wir hier auf $Y = \mathbb{CP}^1$ im Gegensatz zur Wahl einer Karte $k$ mit $k(f(p)) = 0$ immer eine der zwei Standardkarten auf $\mathbb{CP}^1$, also $z$ auf $\mathbb{C}$ und $\frac{1}{z}$ auf $\mathbb{CP}^1 \setminus \{ 0 \}$, verwenden.} von \(f\) bei \(p\) als doppelt-periodische meromorphe Funktion auf \(\mathbb{C}\) bezeichnet. 
+wobei \(\nu_p(f)\) die Null-/Polstellenordnung\footnote{Beachte den Unterschied zur Definition der Ordnung einer holomorphen Abbildung $g:X\rightarrow Y$ (§3), bei der wir zur Definition Karten $h$ für $X$ und $k$ für $Y$ gewählt haben, so dass $h(p) = 0$ und $k(f(p)) = 0$. Damit ist $\text{ord}_p(f) \geq 1$. Im Gegensatz dazu ist $\nu_p(f) = 0$, wenn $f$ dort keine Null-/Polstelle hat. Man könnte das auch so ausdrücken, dass wir hier auf $Y = \mathbb{CP}^1$ im Gegensatz zur Wahl einer Karte $k$ mit $k(f(p)) = 0$ immer eine der zwei Standardkarten auf $\mathbb{CP}^1$, also $z$ auf $\mathbb{C}$ und $\frac{1}{z}$ auf $\mathbb{CP}^1 \setminus \{ 0 \}$, verwenden.} von \(f\) bei \(p\) als doppelt-periodische meromorphe Funktion auf \(\mathbb{C}\) bezeichnet. 
 
-\emph{Hinweis:} Beachte, dass $T=\mathbb{C}/\Lambda$ mit der von $\mathbb{C}$ induzierten Addition eine abelsche Gruppe ist. Zudem scheint die meromorphe $1$-Form
+\emph{Hinweis:} Die meromorphe $1$-Form
 \[
 \frac{z\cdot f'(z)}{f(z)}\,dz
 \]
-ganz hilfreich zu sein — dabei ist \(f\) als doppelt-periodische, meromorphe Funktion zu lesen, wenn von \(f'(z)\) die Rede ist.
+scheint ganz hilfreich zu sein — dabei ist \(f\) als doppelt-periodische, meromorphe Funktion zu lesen, wenn von \(f'(z)\) die Rede ist.
+
+\medskip
+
+\Aufg Sei $\mathscr{U}$ eine offene Überdeckung von $X$ und $\mathcal{F}$ eine Garbe abelscher Gruppen auf $X$. Zeige exemplarisch, dass
+\[
+\delta\circ\delta:\check{C}^0(\mathscr{U},\mathcal{F})\longrightarrow\check{C}^1(\mathscr{U},\mathcal{F})\longrightarrow\check{C}^2(\mathscr{U},\mathcal{F})
+\]
+der Null-Morphismus ist.
 
 \end{document}
 
