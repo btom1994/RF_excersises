@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  1 DEC 2025 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  2 DEC 2025 11:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -661,7 +661,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14.4> not available
 <diag.png, id=5, 274.02374pt x 87.32625pt>
 File: diag.png Graphic file (type png)
 <use diag.png>
-Package pdftex.def Info: diag.png  used on input line 123.
+Package pdftex.def Info: diag.png  used on input line 119.
 (pdftex.def)             Requested size: 219.21928pt x 69.86108pt.
  [1
 
@@ -689,7 +689,7 @@ bm10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><d:/tex
 live/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2021/texmf
 -dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2021/texmf-dist/fonts/typ
 e1/urw/helvetic/uhvro8a.pfb>
-Output written on Blatt10.pdf (1 page, 144281 bytes).
+Output written on Blatt10.pdf (1 page, 144271 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
