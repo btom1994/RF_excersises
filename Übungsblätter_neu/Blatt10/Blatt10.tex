@@ -114,21 +114,6 @@
 
 \vspace*{1cm}
 
-\Aufg Seien $\mathscr{W}\le\mathscr{V}\le\mathscr{U}$ jeweils Verfeinerungen offener Überdeckungen. Zeige, dass die Verfeinerungsabbildungen in Čech-Kohomologie wie erwartet kommutieren, das heißt, dass das folgende Dreieck kommutiert:
-\begin{center}
-	\includegraphics[scale=0.8]{diag}
-\end{center}
-
-\medskip
-
-\Aufg Zeige, dass die Verfeinerungsabbildung auf Čech-Kohomologie
-\[
-\check{H}^r(\mathscr{U},\mathcal{F}) \longrightarrow \check{H}^r(\mathscr{V},\mathcal{F})
-\]
-für eine Verfeinerung $\mathscr{V}\le\mathscr{U}$ immer injektiv ist.
-
-\medskip
-
 \Aufg Betrachte die Garben $\mathcal{O}(m)$ auf $\mathbb{CP}^1$ aus Aufgabe 10, Blatt 3. Sei $\mathscr{U}=(U_0,U_1)$ die dort betrachtete offene Überdeckung (die Standard-Kartengebiete auf $\mathbb{CP}^1$). Zeige, dass\footnote{Beachte, dass diese Kohomologiegruppen in natürlicher Weise $\mathbb{C}$-Vektorräume sind, weil die lokalen Schnitte $\mathcal{O}(m)(U)$ dies sind und die Korand-Operatoren $\delta$ offenbar $\mathbb{C}$-linear.}
 \[
 \dim_{\mathbb{C}} \check{H}^1(\mathscr{U},\mathcal{O}(m)) \;=\;
@@ -137,7 +122,26 @@ für eine Verfeinerung $\mathscr{V}\le\mathscr{U}$ immer injektiv ist.
 	0 & \text{für } m\ge -1.
 \end{cases}
 \]
+\medskip
 
+\Aufg Seien $p_1,\dots,p_n\in\mathbb{C}$ paarweise verschiedene Punkte. Zeige:
+\[
+\check{H}^1\bigl(\mathbb{C}\setminus\{p_1,\dots,p_n\},\underline{\mathbb{Z}}\bigr)\cong\mathbb{Z}^n
+\]
+
+\emph{Hinweis:} Finde $\mathscr{U}=(U_1,U_2)$ mit einfach zusammenhängenden $U_1,U_2$, so dass $U_1\cap U_2$ genau $n+1$ Zusammenhangskomponenten hat. Damit kann man mittels Satz von Leray die Aufgabe lösen.
+
+\medskip
+
+\Aufg Sei $\mathcal{F}$ eine Prägarbe auf $X$ und $\pi:|\mathcal{F}|\to X$ die Projektion des \emph{espace étalé}. Setze
+\[
+\mathcal{G} : U \longmapsto \{\,\sigma:U\to |\mathcal{F}|\ \text{stetig}\ \mid\ \pi\circ\sigma=\mathrm{id}_U\,\}.
+\]
+Zeige, dass
+\begin{enumerate}[label=\roman*)]
+	\item $\mathcal{G}$ eine Garbe ist
+	\item und es einen kanonischen Isomorphismus $\mathcal{F}_p\to \mathcal{G}_p$ für jedes $p\in X$ gibt.
+\end{enumerate}
 
 
 \end{document}
