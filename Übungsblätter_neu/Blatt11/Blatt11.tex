@@ -114,19 +114,15 @@
 
 \vspace*{1cm}
 
-\Aufg Sei $X$ eine kompakte Riemannsche Fläche und $\mathscr{U}=(U_1,\dots,U_n)$ eine endliche offene Überdeckung. Zeige, dass man die Čech-Kohomologie
-\[
-\check{H}^1(\mathscr{U},\mathcal{F})
-\]
-auch als die Kohomologie des alternierenden Komplexes
-\[
-\check{C}^r_{\mathrm{alt}}(\mathscr{U},\mathcal{F}):=\prod_{\,0\le i_0<\dots<i_r\le n} \mathcal{F}\bigl(U_{i_0}\cap\cdots\cap U_{i_r}\bigr)
-\]
-mit denselben Korand-Operatoren berechnen kann.
 
-\vspace*{0.2cm}\noindent{\bf
-	Bemerkung:} Das gilt auch allgemein für alle $\check{H}^r$ und ohne Kompaktheit und Endlichkeit, ist dann aber schwieriger zu zeigen. Das darf aber ab jetzt für Aufgaben verwendet werden.
+\Aufg Seien $p_1,\dots,p_n\in\mathbb{R}\subset\mathbb{C}$ paarweise verschiedene Punkte. Zeige:
+\[
+\check{H}^1\bigl(\mathbb{C}\setminus\{p_1,\dots,p_n\},\underline{\mathbb{Z}}\bigr)\cong\mathbb{Z}^n
+\]
 
+\emph{Hinweis:} Finde $\mathscr{U}=(U_1,U_2)$ mit einfach zusammenhängenden $U_1,U_2$, so dass $U_1\cap U_2$ genau $n+1$ Zusammenhangskomponenten hat. Damit kann man mittels Satz von Leray die Aufgabe lösen.
+
+\medskip
 
 \Aufg Betrachte die Garben $\mathcal{O}(m)$ auf $\mathbb{CP}^1$ aus Aufgabe 10, Blatt 3. Sei $\mathscr{U}=(U_0,U_1)$ die dort betrachtete offene Überdeckung (die Standard-Kartengebiete auf $\mathbb{CP}^1$). Zeige, dass\footnote{Beachte, dass diese Kohomologiegruppen in natürlicher Weise $\mathbb{C}$-Vektorräume sind, weil die lokalen Schnitte $\mathcal{O}(m)(U)$ dies sind und die Korand-Operatoren $\delta$ offenbar $\mathbb{C}$-linear.}
 \[
@@ -137,6 +133,17 @@ mit denselben Korand-Operatoren berechnen kann.
 \end{cases}
 \]
 \medskip
+
+\Aufg  Sei $g \in \mathcal{E}(\mathbb{C})$ eine Funktion mit kompaktem Träger. 
+Zeige, dass die Gleichung
+\[
+\frac{\partial f}{\partial \overline{z}} = g
+\]
+genau dann eine Lösung $f \in \mathcal{E}(\mathbb{C})$ mit kompaktem Träger hat, wenn
+\[
+\int_{\mathbb{C}} z^n g(z)\, dz \wedge d\overline{z} = 0 
+\qquad \text{für jedes } n \in \mathbb{N}.
+\]
 
 
 \end{document}
