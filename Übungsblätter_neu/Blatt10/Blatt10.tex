@@ -114,6 +114,18 @@
 
 \vspace*{1cm}
 
+\Aufg Sei $\mathcal{F}$ eine Prägarbe auf $X$ und $\pi:|\mathcal{F}|\to X$ die Projektion des \emph{espace étalé}. Setze
+\[
+\mathcal{G} : U \longmapsto \{\,\sigma:U\to |\mathcal{F}|\ \text{stetig}\ \mid\ \pi\circ\sigma=\mathrm{id}_U\,\}.
+\]
+Zeige, dass
+\begin{enumerate}[label=\roman*)]
+	\item $\mathcal{G}$ eine Garbe ist
+	\item und es einen kanonischen Isomorphismus $\mathcal{F}_p\to \mathcal{G}_p$ für jedes $p\in X$ gibt.
+\end{enumerate}
+
+\medskip
+
 \Aufg Sei $X$ eine kompakte Riemannsche Fläche und $\mathscr{U}=(U_1,\dots,U_n)$ eine endliche offene Überdeckung. Zeige, dass man die Čech-Kohomologie
 \[
 \check{H}^1(\mathscr{U},\mathcal{F})
@@ -129,29 +141,16 @@ mit denselben Korand-Operatoren berechnen kann.
 
 \medskip
 
-\Aufg Sei \(X\) eine kompakte Riemannsche Fläche. Zeige:
-\begin{enumerate}
-	\item Die Abbildung
-	\[
-	\check{H}^{1}(X, \underline{\mathbb{Z}}) \;\longrightarrow\; \check{H}^{1}(X, \underline{\mathbb{C}}),
-	\]
-	induziert durch die Inklusion \(\mathbb{Z} \subset \mathbb{C}\), ist injektiv.
-	
-	\item \(\check{H}^{1}(X, \underline{\mathbb{Z}})\) ist ein endlich erzeugter freier \(\mathbb{Z}\)-Modul ist.
-	
-	\emph{Hinweis:} Zeige zuerst, dass \(\check{H}^{1}(X, \underline{\mathbb{Z}})\) endlich erzeugt ist, und benutze dann die vorherige Teilaufgabe, um zu beweisen, dass \(\check{H}^{1}(X, \underline{\mathbb{Z}})\) frei ist.
-\end{enumerate}
-
-\medskip
-
-\Aufg Sei $\mathcal{F}$ eine Prägarbe auf $X$ und $\pi:|\mathcal{F}|\to X$ die Projektion des \emph{espace étalé}. Setze
+\Aufg Betrachte die Garben $\mathcal{O}(m)$ auf $\mathbb{CP}^1$ aus Aufgabe 10, Blatt 3. Sei $\mathscr{U}=(U_0,U_\infty)$ die dort betrachtete offene Überdeckung (die Standard-Kartengebiete auf $\mathbb{CP}^1$). Zeige, dass\footnote{Beachte, dass diese Kohomologiegruppen in natürlicher Weise $\mathbb{C}$-Vektorräume sind, weil die lokalen Schnitte $\mathcal{O}(m)(U)$ dies sind und die Korand-Operatoren $\delta$ offenbar $\mathbb{C}$-linear.}
 \[
-\mathcal{G} : U \longmapsto \{\,\sigma:U\to |\mathcal{F}|\ \text{stetig}\ \mid\ \pi\circ\sigma=\mathrm{id}_U\,\}.
+\dim_{\mathbb{C}} \check{H}^1(\mathscr{U},\mathcal{O}(m)) \;=\;
+\begin{cases}
+	-m-1 & \text{für } m\le -2,\\[4pt]
+	0 & \text{für } m\ge -1.
+\end{cases}
 \]
-Zeige, dass
-\begin{enumerate}[label=\roman*)]
-	\item $\mathcal{G}$ eine Garbe ist
-	\item und es einen kanonischen Isomorphismus $\mathcal{F}_p\to \mathcal{G}_p$ für jedes $p\in X$ gibt.
-\end{enumerate}
+
+\emph{Hinweis:} Wir hatten dort die holomorphen Funktionen als Potenzreihen betrachtet. Jetzt haben wir meromorphe Funktionen, können diese also als Laurentreihen betrachten.
+
 
 \end{document}
