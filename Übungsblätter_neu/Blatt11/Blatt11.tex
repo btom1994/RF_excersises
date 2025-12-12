@@ -138,16 +138,31 @@
 
 \medskip
 
-\Aufg Sei $\Delta:=\{ z\in\mathbb{C}\mid |z|< r \}$ mit $0<r\leq\infty$. Sei weiter $\mathscr{H}$ die Garbe der harmonischen Funktionen auf $\Delta$, d.h.
-\[
-	\mathscr{H}(U)=\{ f\in\mathcal{E}(U) \mid \partial\overline{\partial} f=0 \}, \quad \text{für } U\subset\Delta \text{ offen.}
-\]
-Zeige,dass $\check{H}^1(\Delta,\mathscr{H})=0$ gilt.
+%\Aufg Sei $\Delta:=\{ z\in\mathbb{C}\mid |z|< r \}$ mit $0<r\leq\infty$. Sei weiter $\mathscr{H}$ die Garbe der harmonischen Funktionen auf $\Delta$, d.h.
+%\[
+%	\mathscr{H}(U)=\{ f\in\mathcal{E}(U) \mid \partial\overline{\partial} f=0 \}, \quad \text{für } U\subset\Delta \text{ offen.}
+%\]
+%Zeige,dass $\check{H}^1(\Delta,\mathscr{H})=0$ gilt.
+%
+%\Aufg Sei \(\mathscr{U}=(U_1,U_2)\) mit \(U_1:=\mathbb{C}\setminus\mathbb{R}_{\ge0}\) und \(U_2:=\mathbb{C}\setminus\mathbb{R}_{\le0}\).
+%\begin{enumerate}
+%	\item Zeige, dass \(\mathscr{U}\) eine Leray-Überdeckung für \(\check{H}^1(\mathbb{C}\setminus\{0\},\mathcal{O})\) ist.
+%	\item Versuche damit \(\check{H}^1(\mathbb{C}\setminus\{0\},\mathcal{O})\) zu bestimmen.
+%\end{enumerate}
+%
+%\medskip
+%
+%\Aufg Sei $U\subsetneqq\mathbb{C}$ offen und einfach zusammenhängend und $\omega\in\mathcal{E}^{(0,1)}(U)$. Zeige:
+%\begin{enumerate}
+%	\item Zeige, dass $f\in\mathcal{E}(U)$ mit $\overline{\partial}f=\omega$ existiert.
+%	\item Folgere nun $\check{H}^1(U,\mathcal{O})=0.$
+%\end{enumerate}
 
-\Aufg Sei \(\mathscr{U}=(U_1,U_2)\) mit \(U_1:=\mathbb{C}\setminus\mathbb{R}_{\ge0}\) und \(U_2:=\mathbb{C}\setminus\mathbb{R}_{\le0}\).
-\begin{enumerate}
-	\item Zeige, dass \(\mathscr{U}\) eine Leray-Überdeckung für \(\check{H}^1(\mathbb{C}\setminus\{0\},\mathcal{O})\) ist.
-	\item Versuche damit \(\check{H}^1(\mathbb{C}\setminus\{0\},\mathcal{O})\) zu bestimmen.
-\end{enumerate}
+\Aufg Sei $X$ eine Riemannsche Fläche. Zeige, dass folgende kurze Sequenz von Garben exakt ist:
+$$0 \to \mathcal{O} \to \mathcal{E} \xrightarrow{\overline{\partial}} \mathcal{E}^{(1)} \to 0$$
 
+\emph{Hinweis:} Die obige Sequenz heißt exakt, wenn für alle offenen Mengen $U\subset X$ die Sequenz 
+$$0 \to \mathcal{O}(U) \to \mathcal{E}(U) \xrightarrow{\overline{\partial}} \mathcal{E}^{(1)}(U) \to 0$$
+exakt ist. Nutze für die Surjektivität von $\overline{\partial}$ das Dolbeault Lemma.
+	
 \end{document}
