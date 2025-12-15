@@ -109,22 +109,32 @@
 \medskip \centerline{13. Blatt}
 
 
-\setcounter{aufg}{41}
+\setcounter{aufg}{39}
 \newcounter{labl}
 
 \vspace*{1cm}
 
-\Aufg Sei $\Delta:=\{z\in\mathbb{C}\mid |z|<1\}$ und $\Delta^\times=\Delta\setminus\{0\}$. 
-In der Vorlesung wurde gezeigt, dass es zu jeder $C^\infty$-Abbildung $g\in\mathcal{E}(\Delta)$ eine Lösung 
-$f\in\mathcal{E}(\Delta)$ von
-\[
-\frac{\partial f}{\partial\bar z}=g
-\]
-existiert. Variiere den Beweis so, dass die Behauptung auch für $\Delta^\times$ gilt.\footnote{Dazu könnte man an einer entsprechenden Stelle Laurent-Polynome $\sum_{k=-N}^{M}{c_k z^k}$ anstelle von herkömmlichen Polynomen verwenden.}
+
+
+\Aufg \begin{enumerate}
+	\item Sei $X$ eine Riemannsche Fläche. Zeige, dass folgende kurze Sequenz von Garben exakt ist:
+	$$0 \to \mathcal{O} \to \mathcal{E} \xrightarrow{\overline{\partial}} \mathcal{E}^{(1)} \to 0$$
+	\item Für jede Kreisscheibe $\Delta \subset X$ ist die $\check{\text{C}}$ech-Kohomologie $\check{H}^1(\Delta, \mathcal{O}) = 0$.
+	
+	Erkläre, warum dies eine Konsequenz der folgenden beiden Tatsachen (die nicht bewiesen werden müssen) ist:
+	\begin{enumerate}
+		\item[1.] Die Garben-Sequenz aus Teilaufgabe (i) induziert eine lange exakte Kohomologiesequenz für die globalen Schnitte auf $\Delta$:
+		$$0 \to \mathcal{O} \to \mathcal{E} \xrightarrow{\overline{\partial}} \mathcal{E}^{(1)} \xrightarrow{\delta} \check{H}^1(\Delta,\mathcal{O})\to\check{H}^1(\Delta,\mathcal{E})\to\dots$$
+		\item[2.] Das \textbf{Dolbeault-Theorem} für Kreisscheiben $\Delta$:
+		$$\check{H}^1(\Delta, \mathcal{O}) \cong H^1_{\overline{\partial}}(\Delta)$$
+		Hierbei ist $H^1_{\overline{\partial}}(\Delta)$ die Dolbeault-Kohomologie:
+		$$H^1_{\overline{\partial}}(\Delta) = \frac{\ker(\overline{\partial}: \mathcal{E}^1(\Delta) \to \mathcal{E}^2(\Delta))}{\text{im}(\overline{\partial}: \mathcal{E}(\Delta) \to \mathcal{E}^1(\Delta))}$$
+	\end{enumerate}
+\end{enumerate}
 
 \medskip
 
-\Aufg Folgere aus der vorherigen Aufgabe: 
+\Aufg Folgere aus Aufgabe 37 (Blatt 11): 
 \[
 \check{H}^1(\Delta^\times,\mathcal{O})=0
 \]

@@ -158,11 +158,14 @@
 %	\item Folgere nun $\check{H}^1(U,\mathcal{O})=0.$
 %\end{enumerate}
 
-\Aufg Sei $X$ eine Riemannsche Fläche. Zeige, dass folgende kurze Sequenz von Garben exakt ist:
-$$0 \to \mathcal{O} \to \mathcal{E} \xrightarrow{\overline{\partial}} \mathcal{E}^{(1)} \to 0$$
+\Aufg Sei $\Delta:=\{z\in\mathbb{C}\mid |z|<1\}$ und $\Delta^\times=\Delta\setminus\{0\}$. 
+In der Vorlesung wurde gezeigt, dass es zu jeder $C^\infty$-Abbildung $g\in\mathcal{E}(\Delta)$ eine Lösung 
+$f\in\mathcal{E}(\Delta)$ von
+\[
+\frac{\partial f}{\partial\bar z}=g
+\]
+existiert. Variiere den Beweis so, dass die Behauptung auch für $\Delta^\times$ gilt.
 
-\emph{Hinweis:} Die obige Sequenz heißt exakt, wenn für alle offenen Mengen $U\subset X$ die Sequenz 
-$$0 \to \mathcal{O}(U) \to \mathcal{E}(U) \xrightarrow{\overline{\partial}} \mathcal{E}^{(1)}(U) \to 0$$
-exakt ist. Nutze für die Surjektivität von $\overline{\partial}$ das Dolbeault Lemma.
-	
+\emph{Hinweis:} Dazu könnte man an einer entsprechenden Stelle Laurent-Polynome $\sum_{k=-N}^{M}{c_k z^k}$ anstelle von herkömmlichen Polynomen verwenden.
+
 \end{document}
