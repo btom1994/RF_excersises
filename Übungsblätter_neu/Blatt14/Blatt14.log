@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  15 DEC 2025 20:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  16 DEC 2025 14:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -668,7 +668,7 @@ MNTF_RGB.jpeg>]
 Here is how much of TeX's memory you used:
  16813 strings out of 478276
  313668 string characters out of 5850490
- 627575 words of memory out of 5000000
+ 626575 words of memory out of 5000000
  34659 multiletter control sequences out of 15000+600000
  494737 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -687,7 +687,7 @@ fonts/type1/public/amsfonts/cm/cmsy9.pfb><d:/texlive/2021/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/ur
 w/helvetic/uhvb8a.pfb><d:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr
 8a.pfb><d:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Blatt14.pdf (1 page, 153924 bytes).
+Output written on Blatt14.pdf (1 page, 152294 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  53 compressed objects within 1 object stream
