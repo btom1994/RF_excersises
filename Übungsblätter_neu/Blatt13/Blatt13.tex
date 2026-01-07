@@ -114,31 +114,6 @@
 
 \vspace*{1cm}
 
-\Aufg \begin{enumerate}
-	\item Sei $X$ eine Riemannsche Fläche. Zeige, dass folgende kurze Sequenz von Garben exakt ist:
-	$$0 \to \mathcal{O} \to \mathcal{E} \xrightarrow{\overline{\partial}} \mathcal{E}^{(1)} \to 0$$
-	\item Für jede Kreisscheibe $\Delta \subset X$ ist die $\check{\text{C}}$ech-Kohomologie $\check{H}^1(\Delta, \mathcal{O}) = 0$.
-	
-	Erkläre, warum dies eine Konsequenz der folgenden beiden Tatsachen (die nicht bewiesen werden müssen) ist:
-	\begin{enumerate}
-		\item[1.] Die Garben-Sequenz aus Teilaufgabe (i) induziert eine lange exakte Kohomologiesequenz für die globalen Schnitte auf $\Delta$:
-		$$0 \to \mathcal{O} \to \mathcal{E} \xrightarrow{\overline{\partial}} \mathcal{E}^{(1)} \xrightarrow{\delta} \check{H}^1(\Delta,\mathcal{O})\to\check{H}^1(\Delta,\mathcal{E})\to\dots$$
-		\item[2.] Das \textbf{Dolbeault-Theorem} für Kreisscheiben $\Delta$:
-		$$\check{H}^1(\Delta, \mathcal{O}) \cong H^1_{\overline{\partial}}(\Delta)$$
-		Hierbei ist $H^1_{\overline{\partial}}(\Delta)$ die Dolbeault-Kohomologie:
-		$$H^1_{\overline{\partial}}(\Delta) = \frac{\ker(\overline{\partial}: \mathcal{E}^1(\Delta) \to \mathcal{E}^2(\Delta))}{\text{im}(\overline{\partial}: \mathcal{E}(\Delta) \to \mathcal{E}^1(\Delta))}$$
-	\end{enumerate}
-\end{enumerate}
-
-\medskip
-
-\Aufg Folgere aus Aufgabe 37 (Blatt 11): 
-\[
-\check{H}^1(\Delta^\times,\mathcal{O})=0
-\]
-
-\medskip
-
 \Aufg Sei $X$ ein topologischer Raum und
 \[
 0\longrightarrow\mathcal{F}\longrightarrow\mathcal{G}\longrightarrow\mathcal{H}\longrightarrow 0
@@ -151,14 +126,31 @@ eine kurze exakte Sequenz von Garben auf $X$. Zeige, dass für jedes offene $U\s
 
 \medskip
 
-\Aufg
-\begin{enumerate}[label=\roman*)]
-	\item Zeige, dass der kanonische Divisor auf $\mathbb{CP}^1$ durch
-	\[
-	K = -2\cdot\infty
-	\]
-	gegeben ist (was heißt das eigentlich?).
-	\item Zeige, dass jeder Divisor vom Grad $0$ auf $\mathbb{CP}^1$ ein Hauptdivisor ist.
+\Aufg Sei $X$ eine Riemannsche Fläche. Zeige:
+\begin{enumerate}
+	\item Folgende kurze Sequenz von Garben ist exakt:
+	$$0 \to \mathcal{O} \to \mathcal{E} \xrightarrow{\overline{\partial}} \mathcal{E}^{(0,1)} \to 0$$
+	\item $\check{H}^1(X, \mathcal{O}) \cong H^1_{\overline{\partial}}(X) := \frac{\mathcal{E}^{(0,1)}(X)}{\overline{\partial}(\mathcal{E}(X))}$
+	
+	\emph{Hinweis:} Die Garben-Sequenz aus (i) induziert eine lange exakte Kohomologiesequenz.
+\end{enumerate}
+
+\medskip
+
+\Aufg Folgere aus Aufgabe 37 (Blatt 11) und der vorhergehenden Aufgabe: 
+\[
+\check{H}^1(\Delta^\times,\mathcal{O})=0
+\]
+
+\medskip
+
+\Aufg \begin{enumerate}
+	\item Begründe mit Aufgabe 6 (Blatt 2), dass folgende Garbensequenz exakt ist:
+	$$
+	0 \to \underline{2\pi i\mathbb{Z}} \to \mathcal{O} \overset{\exp}{\to} \mathcal{O}^\times \to 0
+	$$
+	\item Folgere nun mithilfe der induzierten langen Kohomologiesequenz: $\check{H}^1(\mathbb{CP}^1,\mathcal{O}^\times)\cong \check{H}^1(\mathbb{CP}^1,\underline{\mathbb{Z}})$
+	\item Zeige schließlich mit (ii): $\check{H}^1(\mathbb{CP}^1,\mathcal{O}^\times)\cong \mathbb{Z}$
 \end{enumerate}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  5 JAN 2026 11:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  7 JAN 2026 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -658,6 +658,8 @@ Package pdftex.def Info: Uni_Aug_Logo_MNTF_RGB.jpeg  used on input line 92.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14.4> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 106.
 \c@labl=\count312
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 135.
  [1
 
 {d:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Uni_Aug_Logo_
@@ -665,26 +667,28 @@ MNTF_RGB.jpeg>]
 (./Blatt13.aux) ) 
 Here is how much of TeX's memory you used:
  16786 strings out of 478276
- 313408 string characters out of 5850490
- 630575 words of memory out of 5000000
- 34644 multiletter control sequences out of 15000+600000
- 486052 words of font info for 73 fonts, out of 8000000 for 9000
+ 313396 string characters out of 5850490
+ 627575 words of memory out of 5000000
+ 34643 multiletter control sequences out of 15000+600000
+ 487332 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 100i,11n,104p,3223b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,11n,104p,3223b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<d:/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/texlive/202
-1/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2021/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2021/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/m
-sbm10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/t
-exlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2021/tex
-mf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Blatt13.pdf (1 page, 114767 bytes).
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/texlive/2021/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/texlive/2021/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb><d:/texlive/2021/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr6.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb><d:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb><d:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><d:/tex
+live/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/texlive
+/2021/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2021/texmf-dis
+t/fonts/type1/urw/helvetic/uhvr8a.pfb><d:/texlive/2021/texmf-dist/fonts/type1/u
+rw/helvetic/uhvro8a.pfb>
+Output written on Blatt13.pdf (1 page, 130491 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
