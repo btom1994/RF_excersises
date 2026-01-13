@@ -151,6 +151,22 @@ eine kurze exakte Sequenz von Garben auf $X$. Zeige, dass für jedes offene $U\s
 	$$
 	\item Folgere nun mithilfe der induzierten langen Kohomologiesequenz: $\check{H}^1(\mathbb{CP}^1,\mathcal{O}^\times)\cong \check{H}^2(\mathbb{CP}^1,\underline{\mathbb{Z}})$
 	\item Zeige schließlich mit (ii): $\check{H}^1(\mathbb{CP}^1,\mathcal{O}^\times)\cong \mathbb{Z}$
+	
+	Wir verwenden für die offene Überdeckung $(U_0,U_infty)$, die \emph{Mayer-Vietoris-Sequenz}:
+	\[
+	\cdots \longrightarrow
+	\check H^{q-1}(\mathbb{C}^*,\underline{\mathbb Z})
+	\xrightarrow{\;\delta\;}
+	\check H^{q}(\mathbb{CP}^1,\underline{\mathbb Z})
+	\longrightarrow
+	\check H^{q}(U_0,\underline{\mathbb Z})\oplus
+	\check H^{q}(U_\infty,\underline{\mathbb Z})
+	\longrightarrow
+	\check H^{q}(\mathbb{C}^*,\underline{\mathbb Z})
+	\longrightarrow \cdots
+	\]
+	Diese ist eine lange exakte Kohomologiesequenz\footnote{Das ist eine sehr bekannte Tatsache, welche wir an dieser Stelle nicht zeigen werden.}, wobei die Garbe $\underline{\mathbb{Z}}$ jeweils die passende ist, z.B für $\check H^{q}(U ,\underline{\mathbb Z})$ ist dies die Garbe welche auf $U$ die konstante Garbe ist und auf dem Komplement von $U$ 0 ist.
+	Mit dieser können wir $\check{H}^2(\mathbb{CP}^1,\underline{\mathbb{Z}})\cong \mathbb{Z}$ zeigen.
 \end{enumerate}
 
 
