@@ -144,15 +144,16 @@ eine kurze exakte Sequenz von Garben auf $X$. Zeige, dass für jedes offene $U\s
 
 \medskip
 
-\Aufg \begin{enumerate}
-	\item Begründe mit Aufgabe 6 (Blatt 2), dass folgende Garbensequenz exakt ist:
+\Aufg  Ziel dieser Aufgabe ist $\check{H}^1(\mathbb{CP}^1,\mathcal{O}^\times)\cong \mathbb{Z}$ zu zeigen. Wir gehen folgendermaßen vor:
+\begin{enumerate}
+	\item Begründe mit Aufgabe 6 (Blatt 2), dass folgende Sequenz von Garben auf $\mathbb{CP}^1$ exakt ist:
 	$$
 	0 \to \underline{\mathbb{Z}} \overset{\cdot 2\pi i}{\to} \mathcal{O} \overset{\exp}{\to} \mathcal{O}^\times \to 0
 	$$
 	\item Folgere nun mithilfe der induzierten langen Kohomologiesequenz: $\check{H}^1(\mathbb{CP}^1,\mathcal{O}^\times)\cong \check{H}^2(\mathbb{CP}^1,\underline{\mathbb{Z}})$
-	\item Zeige schließlich mit (ii): $\check{H}^1(\mathbb{CP}^1,\mathcal{O}^\times)\cong \mathbb{Z}$
+	\item Zeige schließlich: $\check{H}^2(\mathbb{CP}^1,\mathbb{Z})\cong \mathbb{Z}$.
 	
-	Wir verwenden für die offene Überdeckung $(U_0,U_infty)$, die \emph{Mayer-Vietoris-Sequenz}:
+	Dafür betrachte die \emph{Mayer-Vietoris-Sequenz} für die offene Überdeckung $(U_0,U_\infty)$ von $\mathbb{CP}^1$:
 	\[
 	\cdots \longrightarrow
 	\check H^{q-1}(\mathbb{C}^*,\underline{\mathbb Z})
@@ -165,8 +166,8 @@ eine kurze exakte Sequenz von Garben auf $X$. Zeige, dass für jedes offene $U\s
 	\check H^{q}(\mathbb{C}^*,\underline{\mathbb Z})
 	\longrightarrow \cdots
 	\]
-	Diese ist eine lange exakte Kohomologiesequenz\footnote{Das ist eine sehr bekannte Tatsache, welche wir an dieser Stelle nicht zeigen werden.}, wobei die Garbe $\underline{\mathbb{Z}}$ jeweils die passende ist, z.B für $\check H^{q}(U ,\underline{\mathbb Z})$ ist dies die Garbe welche auf $U$ die konstante Garbe ist und auf dem Komplement von $U$ 0 ist.
-	Mit dieser können wir $\check{H}^2(\mathbb{CP}^1,\underline{\mathbb{Z}})\cong \mathbb{Z}$ zeigen.
+	Diese ist eine lange exakte Kohomologiesequenz\footnote{Das ist eine sehr bekannte Tatsache, welche wir an dieser Stelle nicht zeigen werden.}, wobei die Garbe $\underline{\mathbb{Z}}$ jeweils die passende ist, z.B für $\check H^{q}(U ,\underline{\mathbb Z})$ ist dies die Garbe welche auf $U$ die konstante Garbe ist und auf dem Komplement von $U$ 0 ist. Die Kohomologie verhält sich aber wie gewohnt.
+	Außerdem gilt $\check{H}^r(U,\underline{\mathbb{Z}})=0$ für $r\geq1$ und $U\cong\mathbb{C}$\footnote{Das wissen wir bisher nur für $r=1$. Da wir nie mit $\check{H}^2$ gearbeitet haben, sei diese Aussage auch ohne Beweis gegeben.}.
 \end{enumerate}
 
 
