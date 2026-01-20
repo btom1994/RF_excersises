@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  16 JAN 2026 09:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.2)  20 JAN 2026 19:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -666,10 +666,10 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 MNTF_RGB.jpeg>]
 (./Blatt13.aux) ) 
 Here is how much of TeX's memory you used:
- 16812 strings out of 478276
- 313640 string characters out of 5850490
- 634575 words of memory out of 5000000
- 34658 multiletter control sequences out of 15000+600000
+ 16813 strings out of 478276
+ 313668 string characters out of 5850490
+ 637575 words of memory out of 5000000
+ 34659 multiletter control sequences out of 15000+600000
  494737 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,11n,104p,3223b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -687,7 +687,7 @@ fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/texlive/2021/texmf-dist/font
 s/type1/urw/helvetic/uhvb8a.pfb><d:/texlive/2021/texmf-dist/fonts/type1/urw/hel
 vetic/uhvr8a.pfb><d:/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.p
 fb>
-Output written on Blatt13.pdf (1 page, 151896 bytes).
+Output written on Blatt13.pdf (1 page, 153428 bytes).
 PDF statistics:
  83 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
