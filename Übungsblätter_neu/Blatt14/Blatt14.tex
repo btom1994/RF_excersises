@@ -117,6 +117,14 @@
 
 \vspace*{1cm}
 
+\Aufg Zeige, dass der kanonische Divisor auf $\mathbb{CP}^1$ äquivalent zu
+\[
+K = -2\cdot\infty
+\]
+ist (was heißt das eigentlich?).
+
+\medskip
+
 \Aufg Sei \(D\) ein Divisor auf einer kompakten Riemannschen Fläche \(X\). Zeige:
 \begin{enumerate}
 	\item Die Garbe \(\mathcal{O}_D\) ist ein holomorphes Geradenbündel (vgl. Blatt 12).
@@ -141,24 +149,28 @@
 
 \medskip
 
-\Aufg \begin{enumerate}\item Zeige, dass jedes holomorphe Geradenbündel \(\mathcal{L}\) auf $\mathbb{CP}^1$ einen von $0$ verschiedenen globalen meromorphen Schnitt besitzt und folgere daraus, dass es einen Divisor $D$ gibt mit
-\[
-	\mathcal{L} \cong \OO_D.
-\]
-\item Die Zuordnung
-\[
+\Aufg Sei X wieder eine kompakte Riemannsche Fläche.
+\begin{enumerate}
+	\item Zeige, dass die Zuordnung
+	\[
 	D \mapsto [\OO_D]
-\]
-definiert einen Gruppenhomomorphismus
-\[
-	\Phi:\Div(\mathbb{CP}^1)\longrightarrow \Pic(\mathbb{CP}^1).
-\] 
-Wir wollen nun folgern, dass\footnote{$\Prin$ bezeichnet hier die Untergruppe der Hauptdivisoren.}
-\[
-	\Pic(\mathbb{CP}^1)\;\cong\;\Div(\mathbb{CP}^1)/\Prin(\mathbb{CP}^1)\cong\mathbb{Z}
-\] gilt.
-
-%\emph{Hinweis:} Die Abbildung nach $\mathbb{Z}$ ist natürlich induziert von der Gradabbildung für Divisoren.
+	\]
+	einen Gruppenhomomorphismus\footnote{Die Gruppenstruktur auf $\Pic$ ist durch das Tensorprodukt gegeben.}
+	\[
+	\Phi:\Div(X)\longrightarrow \Pic(X).
+	\] 
+	definiert. Diese Zuordnung ist sogar surjektiv, d.h. zu jedem holomorphen Geradenbündel \(\mathcal{L}\) auf $X$ gibt es einen Divisor $D$ mit
+	\[
+	\mathcal{L} \cong \OO_D.
+	\]
+	Das ist für eine Übungsaufgabe zu aufwendig zu zeigen. Wer will, kann das nachlesen in §29 im Buch \emph{Lectures on Riemann Surfaces} von Otto Forster.
+	\item Zeige damit, dass\footnote{$\Div_H$ bezeichnet hier die Untergruppe der Hauptdivisoren.}
+	\[
+	\Pic(X)\;\cong\;\Div(X)/\Div_H(X)
+	\] gilt und folgere
+	\[
+	\Pic(\mathbb{CP}^1)\;\cong\mathbb{Z}.
+	\]
 \end{enumerate}
 
 
